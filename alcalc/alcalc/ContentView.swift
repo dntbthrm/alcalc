@@ -16,9 +16,6 @@ struct ContentView: View {
     @State var alert = false
     var toDate = Date()
     var age: Int = 0
-    
-    
-
     var body: some View {
         
         
@@ -35,8 +32,16 @@ struct ContentView: View {
                         "Birhtdate",
                         selection: $birthday,
                         displayedComponents: .date) //выбор даты рождения
-                    
-                    
+                    let time = toDate.timeIntervalSince(self.birthday)
+                    let age = Int(time/(60*60*24*365))
+                    if (age<18)
+                    {
+                        Text("Drink some tea, your age is " + "\(age)")
+                    }
+                    else{
+                        Text("Welcome, your age is " + "\(age)")
+                    }
+                    //instead of if-else must appear an alert
                     Picker(
                         selection: $selectedGender,
                         label: Text("Select Gender"))
@@ -49,22 +54,13 @@ struct ContentView: View {
             
             
                 HStack {
-                            NavigationLink("Start Party!!!", destination: MainScreen())
-                                
-                            
+                    NavigationLink("Start Party!!!", destination: MainScreen())
                 }.padding().foregroundColor(.blue)
-            
-            }
-            
-                        
-                    
-                    
-                
-            
             }
         }
-        
     }
+        
+}
 
 
     
