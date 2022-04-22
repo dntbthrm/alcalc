@@ -9,9 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+       
+        NavigationView {
+            NavigationLink{
+                startScreen()
+            } label:{
+                Text("Press to start")
+            }
+        }
     }
+
 }
 
 struct ContentView_Previews: PreviewProvider {
