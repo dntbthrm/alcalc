@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4109115528132D6D00ACECA4 /* startScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109115428132D6D00ACECA4 /* startScreen.swift */; };
 		41F08D16281332EA00003AD1 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F08D15281332EA00003AD1 /* Menu.swift */; };
 		7CC9FBBA280F3E3000FC6E19 /* alcalcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC9FBB9280F3E3000FC6E19 /* alcalcApp.swift */; };
 		7CC9FBBC280F3E3000FC6E19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC9FBBB280F3E3000FC6E19 /* ContentView.swift */; };
@@ -17,7 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4109115428132D6D00ACECA4 /* startScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startScreen.swift; sourceTree = "<group>"; };
 		41F08D15281332EA00003AD1 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		7CC9FBB6280F3E3000FC6E19 /* alcalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alcalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC9FBB9280F3E3000FC6E19 /* alcalcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alcalcApp.swift; sourceTree = "<group>"; };
@@ -60,7 +58,6 @@
 				7CC9FBB9280F3E3000FC6E19 /* alcalcApp.swift */,
 				7CC9FBBB280F3E3000FC6E19 /* ContentView.swift */,
 				9E0670472813488900204F75 /* MainScreen.swift */,
-				4109115428132D6D00ACECA4 /* startScreen.swift */,
 				41F08D15281332EA00003AD1 /* Menu.swift */,
 				7CC9FBBD280F3E3100FC6E19 /* Assets.xcassets */,
 				7CC9FBBF280F3E3100FC6E19 /* Preview Content */,
@@ -149,7 +146,6 @@
 				9E0670482813488900204F75 /* MainScreen.swift in Sources */,
 				41F08D16281332EA00003AD1 /* Menu.swift in Sources */,
 				7CC9FBBC280F3E3000FC6E19 /* ContentView.swift in Sources */,
-				4109115528132D6D00ACECA4 /* startScreen.swift in Sources */,
 				7CC9FBBA280F3E3000FC6E19 /* alcalcApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

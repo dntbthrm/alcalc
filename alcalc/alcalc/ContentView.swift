@@ -13,10 +13,12 @@ struct ContentView: View {
     @State var weight: String=""
     var gender = ["Male" , "Female"]
     @State var selectedGender: Int = 0
-    @State var check = false
+    @State var alert = false
+    var toDate = Date()
+    var age: Int = 0
     
     
-    
+
     var body: some View {
         
         
@@ -25,7 +27,9 @@ struct ContentView: View {
             Form {  //открытие формы
                 Section{    //открытие группы формы
                     
-                    TextField("Weight", text: $weight)  //ввод веса
+                    TextField("Weight", text: $weight,onEditingChanged:{ item in print("onEditingChanged:\(item):\(self.weight)")},
+                              onCommit: {print ("Submitted: \(self.weight)")}).keyboardType(.phonePad)
+  //ввод веса
                     
                     DatePicker(
                         "Birhtdate",
@@ -61,6 +65,7 @@ struct ContentView: View {
         }
         
     }
+
 
     
     
