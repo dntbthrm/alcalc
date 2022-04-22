@@ -20,17 +20,12 @@ struct startScreen: View {
                           onCommit: {print ("After submitting: \(self.age)")}).keyboardType(.phonePad)
         Text("Please, choose your gender")
         NavigationLink{
-            theMainScreenMale()
+            MainScreen()
         }
     label:{
         Text("Мужской")
     }
-        NavigationLink{
-            theMainScreenFemale()
-        }
-    label:{
-        Text("Женский")
-    }
+        
     }
 }
 

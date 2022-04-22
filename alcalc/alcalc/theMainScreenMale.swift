@@ -28,6 +28,6 @@ struct theMainScreenMale: View {
 
 struct theMainScreenMale_Previews: PreviewProvider {
     static var previews: some View {
-        theMainScreenMale()
+        MainScreen()
     }
 }
