@@ -2,14 +2,36 @@
 //  Menu.swift
 //  alcalc
 //
-//  Created by Boss on 22.04.2022.
+//  Created by Komarzz on 23.04.2022.
 //
 
 import SwiftUI
 
+
 struct Menu: View {
+    
+    struct Drink: Identifiable{
+        var id = UUID()
+        let name: String
+        let alcohol: Int
+        let volume: Int
+    }
+    
+var drinksArray = [
+        Drink(name:"Vodka", alcohol:40, volume:50),
+        Drink(name:"Vine", alcohol:8, volume:150),
+        Drink(name:"Bear", alcohol:4, volume:500),
+        Drink(name:"Rom", alcohol:40, volume:50)
+    ]
+    
+    
+    
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(drinksArray) {
+            Text($0.name + "  " + "\($0.alcohol)%" + "  " + "\($0.volume)ml")
+        }
     }
 }
 

@@ -26,7 +26,7 @@ struct ContentView: View {
                     
                     TextField("Weight", text: $weight,onEditingChanged:{ item in print("onEditingChanged:\(item):\(self.weight)")},
                               onCommit: {print ("Submitted: \(self.weight)")}).keyboardType(.phonePad)
-  //ввод веса
+                    //ввод веса
                     
                     DatePicker(
                         "Birhtdate",
@@ -51,20 +51,20 @@ struct ContentView: View {
                         }
                     }.pickerStyle(SegmentedPickerStyle()) //выбор пола
                 }
-            
-            
+                
+                
                 HStack {
                     NavigationLink("Start Party!!!", destination: MainScreen())
                 }.padding().foregroundColor(.blue)
             }
         }
     }
-        
+    
 }
 
 
-    
-    
+
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
