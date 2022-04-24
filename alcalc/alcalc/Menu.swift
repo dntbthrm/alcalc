@@ -7,22 +7,24 @@
 
 import SwiftUI
 
+struct Drink: Identifiable{
+    var id = UUID()
+    let name: String
+    let alcohol: String
+    let volume: String
+}
+
+var drinksArray = [
+    Drink(name:"Vodka", alcohol: "\(40)", volume:"\(40)"),
+    Drink(name:"Vine", alcohol:"\(40)", volume:"\(40)"),
+    Drink(name:"Bear", alcohol:"\(40)", volume:"\(40)"),
+    Drink(name:"Rom", alcohol:"\(40)", volume:"\(40)")
+]
 
 struct Menu: View {
     
-    struct Drink: Identifiable{
-        var id = UUID()
-        let name: String
-        let alcohol: Int
-        let volume: Int
-    }
-    
-   var drinksArray = [
-        Drink(name:"Vodka", alcohol:40, volume:50),
-        Drink(name:"Vine", alcohol:8, volume:150),
-        Drink(name:"Bear", alcohol:4, volume:500),
-        Drink(name:"Rom", alcohol:40, volume:50)
-    ]
+        
+        
     
     @State private var showPopUp: Bool = false
     

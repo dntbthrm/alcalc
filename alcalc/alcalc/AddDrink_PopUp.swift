@@ -27,14 +27,15 @@ struct AddDrink_PopUp: View {
                                     TextField("Volume", text: $volume)
                                 }
                             }
-
-                            Button(action: {
-                                // Dismiss the PopUp
-                                    show = false
-                            }, label: {
-                                Text("Add")
+                            ZStack{
+                                Button(action: {
+                                        drinksArray.append(Drink(name: name, alcohol: alcohol, volume: volume))
+                                        show = false
+                                }, label: {
+                                    Text("Add")
                                     
-                            })
+                                })
+                            }
                         }
                     }
                 }
