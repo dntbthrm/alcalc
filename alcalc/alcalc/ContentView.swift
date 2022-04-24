@@ -54,7 +54,7 @@ struct ContentView: View {
                 
                 
                 HStack {
-                    NavigationLink("Start Party!!!", destination: MainScreen())
+                    NavigationLink("Start Party!!!", destination: theMainScreen())
                 }.padding().foregroundColor(.blue)
             }
         }
