@@ -28,7 +28,7 @@ struct Menu: View {
             Text($0.name + "  " + "\($0.alcohol)%" + "  " + "\($0.volume)ml")
         }
             
-            NavigationLink("Add Drink", destination: AddDrink_PopUp(name: "", alcohol: "", volume: ""))
+            NavigationLink("Add Drink", destination: AddDrink(name: "", alcohol: "", volume: ""))
         
 
     }
