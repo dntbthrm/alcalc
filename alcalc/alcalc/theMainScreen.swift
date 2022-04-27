@@ -37,21 +37,9 @@ struct theMainScreen: View {
             Image("cat").resizable().frame(width: 200, height: 300, alignment: .center)
         }.frame(maxHeight: .infinity, alignment: .bottom)
         HStack{
-        Button (action:
-                {
-                    self.pressM.toggle()
-                })
-                {
-                    Text("choose a\n drink").foregroundColor(.white)
-                        .frame(width: 100, height: 100)
-                        .background(Color.green)
-                        .cornerRadius(15)
-                        .padding()
-                }
-                .sheet(isPresented: $pressM)
-                    {
-                        Menu()
-                    }.frame(alignment: .leading).padding()
+            HStack{
+                NavigationLink("Menu", destination: Menu())
+            }
             Button (action:
                     {
                         self.pressS.toggle()

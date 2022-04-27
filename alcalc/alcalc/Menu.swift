@@ -23,35 +23,13 @@ var drinksArray = [
 
 struct Menu: View {
     
-        
-        
-    
-    @State private var showPopUp: Bool = false
-    
-    
-    
-    
-    
     var body: some View {
         List(drinksArray) {
             Text($0.name + "  " + "\($0.alcohol)%" + "  " + "\($0.volume)ml")
         }
             
-            ZStack {
-                            NavigationView {
-                                ZStack(alignment: .center) {
-                                    Button(action: {
-
-                                            showPopUp.toggle()
-                                        
-                                    }, label: {
-                                        Text("Add Drink")
-                                    })
-                                }
-                            }
-
-                            AddDrink_PopUp(name: "", alcohol: "", volume: "", show: $showPopUp)
-                        }
+            NavigationLink("Add Drink", destination: AddDrink_PopUp(name: "", alcohol: "", volume: ""))
+        
 
     }
 }

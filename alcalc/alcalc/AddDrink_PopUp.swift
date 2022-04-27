@@ -12,13 +12,7 @@ struct AddDrink_PopUp: View {
     @State var name: String
     @State var alcohol: String
     @State var volume: String
-    @Binding var show: Bool
-    
     var body: some View {
-        ZStack {
-                    if show {
-                        // PopUp Window
-                        VStack(alignment: .center, spacing: 0) {
                             
                             Form{
                                 Section{
@@ -27,17 +21,18 @@ struct AddDrink_PopUp: View {
                                     TextField("Volume", text: $volume)
                                 }
                             }
-                            ZStack{
-                                Button(action: {
-                                        drinksArray.append(Drink(name: name, alcohol: alcohol, volume: volume))
-                                        show = false
-                                }, label: {
-                                    Text("Add")
-                                    
-                                })
+        
+        Button("Uklulu", action: {
+            drinksArray.append(Drink(name: name, alcohol: alcohol, volume: volume))
+        })
+                            
+                            HStack{
+                               
+                                NavigationLink("Add", destination: Menu())
                             }
-                        }
+                            
                     }
                 }
-    }
-}
+
+
+
