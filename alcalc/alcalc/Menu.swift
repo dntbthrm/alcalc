@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-var show = false
+
 struct Drink: Identifiable{
     var id = UUID()
     let name: String
@@ -27,7 +27,8 @@ struct Menu: View {
 
     
     
-    @State var show = false;
+    @State var showAdd = false;
+    @State var showDrink = false;
     
     @State var name: String
     @State var alcohol: String
@@ -37,11 +38,15 @@ struct Menu: View {
     
     var body: some View {
         
-        List(drinksArray) {
-         Text($0.name + " " + "\($0.alcohol)%" + " " + "\($0.volume)ml")
-         }
+        List(drinksArray, id: \.id) { index in
+                Text(index.name + " " + "\(index.alcohol)%" + " " + "\(index.volume)ml").onTapGesture{
+                    name = "\(index.name)"
+                    alcohol = "\(index.alcohol)"
+                    showDrink = true
+                }
+        }
         
-        if(show){
+        if(showAdd){
         ZStack {
            
                 Color.white
@@ -49,10 +54,13 @@ struct Menu: View {
                     
                     VStack{
                         Button(action: {
-                            self.show = false
+                            name = ""
+                            alcohol = ""
+                            volume = ""
+                            self.showAdd = false
                         }, label:{
                             Text("X")
-                        }).position(x: 250, y: 15)
+                        }).position(x: 250, y: 15).colorMultiply(Color.green)
                         Spacer()
                         TextField("Name", text: $name)
                             TextField("Alcohol", text: $alcohol)
@@ -66,20 +74,57 @@ struct Menu: View {
                         name = ""
                         alcohol = ""
                         volume = ""
-                        self.show = false
+                        self.showAdd = false
                     }, label: {
                         Text("Add")
-                    }).disabled(name.isEmpty || alcohol.isEmpty || volume.isEmpty)
+                    }).disabled(name.isEmpty || alcohol.isEmpty || volume.isEmpty).colorMultiply(Color.green)
                 }.padding()
             }
             .frame(width: 300, height: 200)
             .cornerRadius(20).shadow(radius: 20)
         }
         
+        
+        if(showDrink){
+        ZStack {
+           
+                Color.white
+                VStack {
+                    
+                    VStack{
+                        Button(action: {
+                            name = ""
+                            alcohol = ""
+                            volume = ""
+                            self.showDrink = false
+                        }, label:{
+                            Text("X")
+                        }).position(x: 250, y: 15).colorMultiply(Color.orange)
+                        Spacer()
+                        TextField("Name", text: $name)
+                            TextField("Alcohol", text: $alcohol)
+                            TextField("Volume", text: $volume)
+                        Spacer()
+                        Button(action: {
+                            name = ""
+                            alcohol = ""
+                            volume = ""
+                            self.showDrink = false
+                        }, label:{
+                            Text("Drink")
+                        }).colorMultiply(Color.orange)
+                    }
+                }.padding()
+        }.frame(width: 300, height: 200)
+                .cornerRadius(20).shadow(radius: 20)
+        }
+        
             
         Button("Add Drink"){
-            self.show = true
+            self.showAdd = true
         }
 
-    }
+    
 }
+}
+
