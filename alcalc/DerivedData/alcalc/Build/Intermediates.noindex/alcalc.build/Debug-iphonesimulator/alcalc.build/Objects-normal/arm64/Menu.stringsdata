@@ -1,0 +1,28 @@
+{
+  "source": "/Users/tatiana/Documents/чудо-проект/firstBranch/alcalcproject/alcalc/alcalc/Menu.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Add Drink"
+      },
+      {
+        "comment": "",
+        "key": "Name"
+      },
+      {
+        "comment": "",
+        "key": "Alcohol"
+      },
+      {
+        "comment": "",
+        "key": "Volume"
+      },
+      {
+        "comment": "",
+        "key": "Close"
+      }
+    ]
+  },
+  "version": 1
+}

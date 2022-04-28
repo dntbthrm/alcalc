@@ -1,0 +1,3629 @@
+{
+  "kind": "Root",
+  "name": "TopLevel",
+  "printedName": "TopLevel",
+  "children": [
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "alcalc",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Var",
+      "name": "show",
+      "printedName": "show",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Bool",
+          "printedName": "Swift.Bool",
+          "usr": "s:Sb"
+        }
+      ],
+      "declKind": "Var",
+      "usr": "s:6alcalc4showSbvp",
+      "mangledName": "$s6alcalc4showSbvp",
+      "moduleName": "alcalc",
+      "declAttributes": [
+        "HasInitialValue",
+        "HasStorage"
+      ],
+      "hasStorage": true
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "Drink",
+      "printedName": "Drink",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "id",
+          "printedName": "id",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "UUID",
+              "printedName": "Foundation.UUID",
+              "usr": "s:10Foundation4UUIDV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc5DrinkV2id10Foundation4UUIDVvp",
+          "mangledName": "$s6alcalc5DrinkV2id10Foundation4UUIDVvp",
+          "moduleName": "alcalc",
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "UUID",
+                  "printedName": "Foundation.UUID",
+                  "usr": "s:10Foundation4UUIDV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc5DrinkV2id10Foundation4UUIDVvg",
+              "mangledName": "$s6alcalc5DrinkV2id10Foundation4UUIDVvg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "UUID",
+                  "printedName": "Foundation.UUID",
+                  "usr": "s:10Foundation4UUIDV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc5DrinkV2id10Foundation4UUIDVvs",
+              "mangledName": "$s6alcalc5DrinkV2id10Foundation4UUIDVvs",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc5DrinkV2id10Foundation4UUIDVvM",
+              "mangledName": "$s6alcalc5DrinkV2id10Foundation4UUIDVvM",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "name",
+          "printedName": "name",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc5DrinkV4nameSSvp",
+          "mangledName": "$s6alcalc5DrinkV4nameSSvp",
+          "moduleName": "alcalc",
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 1,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc5DrinkV4nameSSvg",
+              "mangledName": "$s6alcalc5DrinkV4nameSSvg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "alcohol",
+          "printedName": "alcohol",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc5DrinkV7alcoholSSvp",
+          "mangledName": "$s6alcalc5DrinkV7alcoholSSvp",
+          "moduleName": "alcalc",
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 2,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc5DrinkV7alcoholSSvg",
+              "mangledName": "$s6alcalc5DrinkV7alcoholSSvg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "volume",
+          "printedName": "volume",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc5DrinkV6volumeSSvp",
+          "mangledName": "$s6alcalc5DrinkV6volumeSSvp",
+          "moduleName": "alcalc",
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 3,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc5DrinkV6volumeSSvg",
+              "mangledName": "$s6alcalc5DrinkV6volumeSSvg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(id:name:alcohol:volume:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Drink",
+              "printedName": "alcalc.Drink",
+              "usr": "s:6alcalc5DrinkV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UUID",
+              "printedName": "Foundation.UUID",
+              "hasDefaultArg": true,
+              "usr": "s:10Foundation4UUIDV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:6alcalc5DrinkV2id4name7alcohol6volumeAC10Foundation4UUIDV_S3Stcfc",
+          "mangledName": "$s6alcalc5DrinkV2id4name7alcohol6volumeAC10Foundation4UUIDV_S3Stcfc",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:6alcalc5DrinkV",
+      "mangledName": "$s6alcalc5DrinkV",
+      "moduleName": "alcalc",
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Identifiable",
+          "printedName": "Identifiable",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "ID",
+              "printedName": "ID",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "UUID",
+                  "printedName": "Foundation.UUID",
+                  "usr": "s:10Foundation4UUIDV"
+                }
+              ]
+            }
+          ],
+          "usr": "s:s12IdentifiableP",
+          "mangledName": "$ss12IdentifiableP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
+        }
+      ]
+    },
+    {
+      "kind": "Var",
+      "name": "drinksArray",
+      "printedName": "drinksArray",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Array",
+          "printedName": "[alcalc.Drink]",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Drink",
+              "printedName": "alcalc.Drink",
+              "usr": "s:6alcalc5DrinkV"
+            }
+          ],
+          "usr": "s:Sa"
+        }
+      ],
+      "declKind": "Var",
+      "usr": "s:6alcalc11drinksArraySayAA5DrinkVGvp",
+      "mangledName": "$s6alcalc11drinksArraySayAA5DrinkVGvp",
+      "moduleName": "alcalc",
+      "declAttributes": [
+        "HasInitialValue",
+        "HasStorage"
+      ],
+      "hasStorage": true
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "Menu",
+      "printedName": "Menu",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "show",
+          "printedName": "show",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc4MenuV4showSbvp",
+          "mangledName": "$s6alcalc4MenuV4showSbvp",
+          "moduleName": "alcalc",
+          "declAttributes": [
+            "ProjectedValueProperty",
+            "Custom"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc4MenuV4showSbvg",
+              "mangledName": "$s6alcalc4MenuV4showSbvg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc4MenuV4showSbvs",
+              "mangledName": "$s6alcalc4MenuV4showSbvs",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc4MenuV4showSbvM",
+              "mangledName": "$s6alcalc4MenuV4showSbvM",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "$show",
+          "printedName": "$show",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Binding",
+              "printedName": "SwiftUI.Binding<Swift.Bool>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "usr": "s:7SwiftUI7BindingV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc4MenuV5$show7SwiftUI7BindingVySbGvp",
+          "mangledName": "$s6alcalc4MenuV5$show7SwiftUI7BindingVySbGvp",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Binding",
+                  "printedName": "SwiftUI.Binding<Swift.Bool>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Bool",
+                      "printedName": "Swift.Bool",
+                      "usr": "s:Sb"
+                    }
+                  ],
+                  "usr": "s:7SwiftUI7BindingV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc4MenuV5$show7SwiftUI7BindingVySbGvg",
+              "mangledName": "$s6alcalc4MenuV5$show7SwiftUI7BindingVySbGvg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "_show",
+          "printedName": "_show",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "State",
+              "printedName": "SwiftUI.State<Swift.Bool>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "usr": "s:7SwiftUI5StateV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc4MenuV5_show33_991AD2B6CF2CE88318371187D71C28D9LL7SwiftUI5StateVySbGvp",
+          "mangledName": "$s6alcalc4MenuV5_show33_991AD2B6CF2CE88318371187D71C28D9LL7SwiftUI5StateVySbGvp",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "name",
+          "printedName": "name",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc4MenuV4nameSSvp",
+          "mangledName": "$s6alcalc4MenuV4nameSSvp",
+          "moduleName": "alcalc",
+          "declAttributes": [
+            "ProjectedValueProperty",
+            "Custom"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc4MenuV4nameSSvg",
+              "mangledName": "$s6alcalc4MenuV4nameSSvg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc4MenuV4nameSSvs",
+              "mangledName": "$s6alcalc4MenuV4nameSSvs",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc4MenuV4nameSSvM",
+              "mangledName": "$s6alcalc4MenuV4nameSSvM",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "$name",
+          "printedName": "$name",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Binding",
+              "printedName": "SwiftUI.Binding<Swift.String>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:7SwiftUI7BindingV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc4MenuV5$name7SwiftUI7BindingVySSGvp",
+          "mangledName": "$s6alcalc4MenuV5$name7SwiftUI7BindingVySSGvp",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Binding",
+                  "printedName": "SwiftUI.Binding<Swift.String>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:7SwiftUI7BindingV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc4MenuV5$name7SwiftUI7BindingVySSGvg",
+              "mangledName": "$s6alcalc4MenuV5$name7SwiftUI7BindingVySSGvg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "_name",
+          "printedName": "_name",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "State",
+              "printedName": "SwiftUI.State<Swift.String>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:7SwiftUI5StateV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc4MenuV5_name33_991AD2B6CF2CE88318371187D71C28D9LL7SwiftUI5StateVySSGvp",
+          "mangledName": "$s6alcalc4MenuV5_name33_991AD2B6CF2CE88318371187D71C28D9LL7SwiftUI5StateVySSGvp",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "isInternal": true,
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 1,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "alcohol",
+          "printedName": "alcohol",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc4MenuV7alcoholSSvp",
+          "mangledName": "$s6alcalc4MenuV7alcoholSSvp",
+          "moduleName": "alcalc",
+          "declAttributes": [
+            "ProjectedValueProperty",
+            "Custom"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc4MenuV7alcoholSSvg",
+              "mangledName": "$s6alcalc4MenuV7alcoholSSvg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc4MenuV7alcoholSSvs",
+              "mangledName": "$s6alcalc4MenuV7alcoholSSvs",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc4MenuV7alcoholSSvM",
+              "mangledName": "$s6alcalc4MenuV7alcoholSSvM",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "$alcohol",
+          "printedName": "$alcohol",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Binding",
+              "printedName": "SwiftUI.Binding<Swift.String>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:7SwiftUI7BindingV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc4MenuV8$alcohol7SwiftUI7BindingVySSGvp",
+          "mangledName": "$s6alcalc4MenuV8$alcohol7SwiftUI7BindingVySSGvp",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Binding",
+                  "printedName": "SwiftUI.Binding<Swift.String>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:7SwiftUI7BindingV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc4MenuV8$alcohol7SwiftUI7BindingVySSGvg",
+              "mangledName": "$s6alcalc4MenuV8$alcohol7SwiftUI7BindingVySSGvg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "_alcohol",
+          "printedName": "_alcohol",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "State",
+              "printedName": "SwiftUI.State<Swift.String>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:7SwiftUI5StateV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc4MenuV8_alcohol33_991AD2B6CF2CE88318371187D71C28D9LL7SwiftUI5StateVySSGvp",
+          "mangledName": "$s6alcalc4MenuV8_alcohol33_991AD2B6CF2CE88318371187D71C28D9LL7SwiftUI5StateVySSGvp",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "isInternal": true,
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 2,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "volume",
+          "printedName": "volume",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc4MenuV6volumeSSvp",
+          "mangledName": "$s6alcalc4MenuV6volumeSSvp",
+          "moduleName": "alcalc",
+          "declAttributes": [
+            "ProjectedValueProperty",
+            "Custom"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc4MenuV6volumeSSvg",
+              "mangledName": "$s6alcalc4MenuV6volumeSSvg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc4MenuV6volumeSSvs",
+              "mangledName": "$s6alcalc4MenuV6volumeSSvs",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc4MenuV6volumeSSvM",
+              "mangledName": "$s6alcalc4MenuV6volumeSSvM",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "$volume",
+          "printedName": "$volume",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Binding",
+              "printedName": "SwiftUI.Binding<Swift.String>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:7SwiftUI7BindingV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc4MenuV7$volume7SwiftUI7BindingVySSGvp",
+          "mangledName": "$s6alcalc4MenuV7$volume7SwiftUI7BindingVySSGvp",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Binding",
+                  "printedName": "SwiftUI.Binding<Swift.String>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:7SwiftUI7BindingV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc4MenuV7$volume7SwiftUI7BindingVySSGvg",
+              "mangledName": "$s6alcalc4MenuV7$volume7SwiftUI7BindingVySSGvg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "_volume",
+          "printedName": "_volume",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "State",
+              "printedName": "SwiftUI.State<Swift.String>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:7SwiftUI5StateV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc4MenuV7_volume33_991AD2B6CF2CE88318371187D71C28D9LL7SwiftUI5StateVySSGvp",
+          "mangledName": "$s6alcalc4MenuV7_volume33_991AD2B6CF2CE88318371187D71C28D9LL7SwiftUI5StateVySSGvp",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "isInternal": true,
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 3,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "body",
+          "printedName": "body",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "OpaqueTypeArchetype",
+              "printedName": "some SwiftUI.View",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "View",
+                  "printedName": "SwiftUI.View",
+                  "usr": "s:7SwiftUI4ViewP"
+                }
+              ]
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc4MenuV4bodyQrvp",
+          "mangledName": "$s6alcalc4MenuV4bodyQrvp",
+          "moduleName": "alcalc",
+          "declAttributes": [
+            "Custom"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OpaqueTypeArchetype",
+                  "printedName": "some SwiftUI.View",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "View",
+                      "printedName": "SwiftUI.View",
+                      "usr": "s:7SwiftUI4ViewP"
+                    }
+                  ]
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc4MenuV4bodyQrvg",
+              "mangledName": "$s6alcalc4MenuV4bodyQrvg",
+              "moduleName": "alcalc",
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(show:name:alcohol:volume:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Menu",
+              "printedName": "alcalc.Menu",
+              "usr": "s:6alcalc4MenuV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "hasDefaultArg": true,
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:6alcalc4MenuV4show4name7alcohol6volumeACSb_S3Stcfc",
+          "mangledName": "$s6alcalc4MenuV4show4name7alcohol6volumeACSb_S3Stcfc",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:6alcalc4MenuV",
+      "mangledName": "$s6alcalc4MenuV",
+      "moduleName": "alcalc",
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "View",
+          "printedName": "View",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Body",
+              "printedName": "Body",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OpaqueTypeArchetype",
+                  "printedName": "some SwiftUI.View",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "View",
+                      "printedName": "SwiftUI.View",
+                      "usr": "s:7SwiftUI4ViewP"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "usr": "s:7SwiftUI4ViewP",
+          "mangledName": "$s7SwiftUI4ViewP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "alcalc",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "ContentView",
+      "printedName": "ContentView",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "birthday",
+          "printedName": "birthday",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Date",
+              "printedName": "Foundation.Date",
+              "usr": "s:10Foundation4DateV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc11ContentViewV8birthday10Foundation4DateVvp",
+          "mangledName": "$s6alcalc11ContentViewV8birthday10Foundation4DateVvp",
+          "moduleName": "alcalc",
+          "declAttributes": [
+            "ProjectedValueProperty",
+            "Custom"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Date",
+                  "printedName": "Foundation.Date",
+                  "usr": "s:10Foundation4DateV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV8birthday10Foundation4DateVvg",
+              "mangledName": "$s6alcalc11ContentViewV8birthday10Foundation4DateVvg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Date",
+                  "printedName": "Foundation.Date",
+                  "usr": "s:10Foundation4DateV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV8birthday10Foundation4DateVvs",
+              "mangledName": "$s6alcalc11ContentViewV8birthday10Foundation4DateVvs",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV8birthday10Foundation4DateVvM",
+              "mangledName": "$s6alcalc11ContentViewV8birthday10Foundation4DateVvM",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "$birthday",
+          "printedName": "$birthday",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Binding",
+              "printedName": "SwiftUI.Binding<Foundation.Date>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Date",
+                  "printedName": "Foundation.Date",
+                  "usr": "s:10Foundation4DateV"
+                }
+              ],
+              "usr": "s:7SwiftUI7BindingV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc11ContentViewV9$birthday7SwiftUI7BindingVy10Foundation4DateVGvp",
+          "mangledName": "$s6alcalc11ContentViewV9$birthday7SwiftUI7BindingVy10Foundation4DateVGvp",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Binding",
+                  "printedName": "SwiftUI.Binding<Foundation.Date>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Date",
+                      "printedName": "Foundation.Date",
+                      "usr": "s:10Foundation4DateV"
+                    }
+                  ],
+                  "usr": "s:7SwiftUI7BindingV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV9$birthday7SwiftUI7BindingVy10Foundation4DateVGvg",
+              "mangledName": "$s6alcalc11ContentViewV9$birthday7SwiftUI7BindingVy10Foundation4DateVGvg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "_birthday",
+          "printedName": "_birthday",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "State",
+              "printedName": "SwiftUI.State<Foundation.Date>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Date",
+                  "printedName": "Foundation.Date",
+                  "usr": "s:10Foundation4DateV"
+                }
+              ],
+              "usr": "s:7SwiftUI5StateV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc11ContentViewV9_birthday33_2C90F7971ED7B419A2D92E69C914B33FLL7SwiftUI5StateVy10Foundation4DateVGvp",
+          "mangledName": "$s6alcalc11ContentViewV9_birthday33_2C90F7971ED7B419A2D92E69C914B33FLL7SwiftUI5StateVy10Foundation4DateVGvp",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "weight",
+          "printedName": "weight",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc11ContentViewV6weightSSvp",
+          "mangledName": "$s6alcalc11ContentViewV6weightSSvp",
+          "moduleName": "alcalc",
+          "declAttributes": [
+            "ProjectedValueProperty",
+            "Custom"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV6weightSSvg",
+              "mangledName": "$s6alcalc11ContentViewV6weightSSvg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV6weightSSvs",
+              "mangledName": "$s6alcalc11ContentViewV6weightSSvs",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV6weightSSvM",
+              "mangledName": "$s6alcalc11ContentViewV6weightSSvM",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "$weight",
+          "printedName": "$weight",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Binding",
+              "printedName": "SwiftUI.Binding<Swift.String>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:7SwiftUI7BindingV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc11ContentViewV7$weight7SwiftUI7BindingVySSGvp",
+          "mangledName": "$s6alcalc11ContentViewV7$weight7SwiftUI7BindingVySSGvp",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Binding",
+                  "printedName": "SwiftUI.Binding<Swift.String>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:7SwiftUI7BindingV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV7$weight7SwiftUI7BindingVySSGvg",
+              "mangledName": "$s6alcalc11ContentViewV7$weight7SwiftUI7BindingVySSGvg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "_weight",
+          "printedName": "_weight",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "State",
+              "printedName": "SwiftUI.State<Swift.String>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:7SwiftUI5StateV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc11ContentViewV7_weight33_2C90F7971ED7B419A2D92E69C914B33FLL7SwiftUI5StateVySSGvp",
+          "mangledName": "$s6alcalc11ContentViewV7_weight33_2C90F7971ED7B419A2D92E69C914B33FLL7SwiftUI5StateVySSGvp",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 1,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "gender",
+          "printedName": "gender",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[Swift.String]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc11ContentViewV6genderSaySSGvp",
+          "mangledName": "$s6alcalc11ContentViewV6genderSaySSGvp",
+          "moduleName": "alcalc",
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 2,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[Swift.String]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV6genderSaySSGvg",
+              "mangledName": "$s6alcalc11ContentViewV6genderSaySSGvg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[Swift.String]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV6genderSaySSGvs",
+              "mangledName": "$s6alcalc11ContentViewV6genderSaySSGvs",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV6genderSaySSGvM",
+              "mangledName": "$s6alcalc11ContentViewV6genderSaySSGvM",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "selectedGender",
+          "printedName": "selectedGender",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "usr": "s:Si"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc11ContentViewV14selectedGenderSivp",
+          "mangledName": "$s6alcalc11ContentViewV14selectedGenderSivp",
+          "moduleName": "alcalc",
+          "declAttributes": [
+            "ProjectedValueProperty",
+            "Custom"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV14selectedGenderSivg",
+              "mangledName": "$s6alcalc11ContentViewV14selectedGenderSivg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV14selectedGenderSivs",
+              "mangledName": "$s6alcalc11ContentViewV14selectedGenderSivs",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV14selectedGenderSivM",
+              "mangledName": "$s6alcalc11ContentViewV14selectedGenderSivM",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "$selectedGender",
+          "printedName": "$selectedGender",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Binding",
+              "printedName": "SwiftUI.Binding<Swift.Int>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ],
+              "usr": "s:7SwiftUI7BindingV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc11ContentViewV15$selectedGender7SwiftUI7BindingVySiGvp",
+          "mangledName": "$s6alcalc11ContentViewV15$selectedGender7SwiftUI7BindingVySiGvp",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Binding",
+                  "printedName": "SwiftUI.Binding<Swift.Int>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Int",
+                      "printedName": "Swift.Int",
+                      "usr": "s:Si"
+                    }
+                  ],
+                  "usr": "s:7SwiftUI7BindingV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV15$selectedGender7SwiftUI7BindingVySiGvg",
+              "mangledName": "$s6alcalc11ContentViewV15$selectedGender7SwiftUI7BindingVySiGvg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "_selectedGender",
+          "printedName": "_selectedGender",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "State",
+              "printedName": "SwiftUI.State<Swift.Int>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ],
+              "usr": "s:7SwiftUI5StateV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc11ContentViewV15_selectedGender33_2C90F7971ED7B419A2D92E69C914B33FLL7SwiftUI5StateVySiGvp",
+          "mangledName": "$s6alcalc11ContentViewV15_selectedGender33_2C90F7971ED7B419A2D92E69C914B33FLL7SwiftUI5StateVySiGvp",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 3,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "alert",
+          "printedName": "alert",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc11ContentViewV5alertSbvp",
+          "mangledName": "$s6alcalc11ContentViewV5alertSbvp",
+          "moduleName": "alcalc",
+          "declAttributes": [
+            "ProjectedValueProperty",
+            "Custom"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV5alertSbvg",
+              "mangledName": "$s6alcalc11ContentViewV5alertSbvg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV5alertSbvs",
+              "mangledName": "$s6alcalc11ContentViewV5alertSbvs",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV5alertSbvM",
+              "mangledName": "$s6alcalc11ContentViewV5alertSbvM",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "$alert",
+          "printedName": "$alert",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Binding",
+              "printedName": "SwiftUI.Binding<Swift.Bool>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "usr": "s:7SwiftUI7BindingV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc11ContentViewV6$alert7SwiftUI7BindingVySbGvp",
+          "mangledName": "$s6alcalc11ContentViewV6$alert7SwiftUI7BindingVySbGvp",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Binding",
+                  "printedName": "SwiftUI.Binding<Swift.Bool>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Bool",
+                      "printedName": "Swift.Bool",
+                      "usr": "s:Sb"
+                    }
+                  ],
+                  "usr": "s:7SwiftUI7BindingV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV6$alert7SwiftUI7BindingVySbGvg",
+              "mangledName": "$s6alcalc11ContentViewV6$alert7SwiftUI7BindingVySbGvg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "_alert",
+          "printedName": "_alert",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "State",
+              "printedName": "SwiftUI.State<Swift.Bool>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "usr": "s:7SwiftUI5StateV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc11ContentViewV6_alert33_2C90F7971ED7B419A2D92E69C914B33FLL7SwiftUI5StateVySbGvp",
+          "mangledName": "$s6alcalc11ContentViewV6_alert33_2C90F7971ED7B419A2D92E69C914B33FLL7SwiftUI5StateVySbGvp",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 4,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "toDate",
+          "printedName": "toDate",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Date",
+              "printedName": "Foundation.Date",
+              "usr": "s:10Foundation4DateV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc11ContentViewV6toDate10Foundation0E0Vvp",
+          "mangledName": "$s6alcalc11ContentViewV6toDate10Foundation0E0Vvp",
+          "moduleName": "alcalc",
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 5,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Date",
+                  "printedName": "Foundation.Date",
+                  "usr": "s:10Foundation4DateV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV6toDate10Foundation0E0Vvg",
+              "mangledName": "$s6alcalc11ContentViewV6toDate10Foundation0E0Vvg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Date",
+                  "printedName": "Foundation.Date",
+                  "usr": "s:10Foundation4DateV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV6toDate10Foundation0E0Vvs",
+              "mangledName": "$s6alcalc11ContentViewV6toDate10Foundation0E0Vvs",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV6toDate10Foundation0E0VvM",
+              "mangledName": "$s6alcalc11ContentViewV6toDate10Foundation0E0VvM",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "age",
+          "printedName": "age",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "usr": "s:Si"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc11ContentViewV3ageSivp",
+          "mangledName": "$s6alcalc11ContentViewV3ageSivp",
+          "moduleName": "alcalc",
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 6,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV3ageSivg",
+              "mangledName": "$s6alcalc11ContentViewV3ageSivg",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV3ageSivs",
+              "mangledName": "$s6alcalc11ContentViewV3ageSivs",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV3ageSivM",
+              "mangledName": "$s6alcalc11ContentViewV3ageSivM",
+              "moduleName": "alcalc",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "body",
+          "printedName": "body",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "OpaqueTypeArchetype",
+              "printedName": "some SwiftUI.View",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "View",
+                  "printedName": "SwiftUI.View",
+                  "usr": "s:7SwiftUI4ViewP"
+                }
+              ]
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc11ContentViewV4bodyQrvp",
+          "mangledName": "$s6alcalc11ContentViewV4bodyQrvp",
+          "moduleName": "alcalc",
+          "declAttributes": [
+            "Custom"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OpaqueTypeArchetype",
+                  "printedName": "some SwiftUI.View",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "View",
+                      "printedName": "SwiftUI.View",
+                      "usr": "s:7SwiftUI4ViewP"
+                    }
+                  ]
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc11ContentViewV4bodyQrvg",
+              "mangledName": "$s6alcalc11ContentViewV4bodyQrvg",
+              "moduleName": "alcalc",
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(birthday:weight:gender:selectedGender:alert:toDate:age:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ContentView",
+              "printedName": "alcalc.ContentView",
+              "usr": "s:6alcalc11ContentViewV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Date",
+              "printedName": "Foundation.Date",
+              "hasDefaultArg": true,
+              "usr": "s:10Foundation4DateV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "hasDefaultArg": true,
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[Swift.String]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sa"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "hasDefaultArg": true,
+              "usr": "s:Si"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "hasDefaultArg": true,
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Date",
+              "printedName": "Foundation.Date",
+              "hasDefaultArg": true,
+              "usr": "s:10Foundation4DateV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "hasDefaultArg": true,
+              "usr": "s:Si"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:6alcalc11ContentViewV8birthday6weight6gender14selectedGender5alert6toDate3ageAC10Foundation0K0V_SSSaySSGSiSbAMSitcfc",
+          "mangledName": "$s6alcalc11ContentViewV8birthday6weight6gender14selectedGender5alert6toDate3ageAC10Foundation0K0V_SSSaySSGSiSbAMSitcfc",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ContentView",
+              "printedName": "alcalc.ContentView",
+              "usr": "s:6alcalc11ContentViewV"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:6alcalc11ContentViewVACycfc",
+          "mangledName": "$s6alcalc11ContentViewVACycfc",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:6alcalc11ContentViewV",
+      "mangledName": "$s6alcalc11ContentViewV",
+      "moduleName": "alcalc",
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "View",
+          "printedName": "View",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Body",
+              "printedName": "Body",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OpaqueTypeArchetype",
+                  "printedName": "some SwiftUI.View",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "View",
+                      "printedName": "SwiftUI.View",
+                      "usr": "s:7SwiftUI4ViewP"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "usr": "s:7SwiftUI4ViewP",
+          "mangledName": "$s7SwiftUI4ViewP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "ContentView_Previews",
+      "printedName": "ContentView_Previews",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "previews",
+          "printedName": "previews",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "OpaqueTypeArchetype",
+              "printedName": "some SwiftUI.View",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "View",
+                  "printedName": "SwiftUI.View",
+                  "usr": "s:7SwiftUI4ViewP"
+                }
+              ]
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc20ContentView_PreviewsV8previewsQrvpZ",
+          "mangledName": "$s6alcalc20ContentView_PreviewsV8previewsQrvpZ",
+          "moduleName": "alcalc",
+          "static": true,
+          "declAttributes": [
+            "Custom"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OpaqueTypeArchetype",
+                  "printedName": "some SwiftUI.View",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "View",
+                      "printedName": "SwiftUI.View",
+                      "usr": "s:7SwiftUI4ViewP"
+                    }
+                  ]
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc20ContentView_PreviewsV8previewsQrvgZ",
+              "mangledName": "$s6alcalc20ContentView_PreviewsV8previewsQrvgZ",
+              "moduleName": "alcalc",
+              "static": true,
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ContentView_Previews",
+              "printedName": "alcalc.ContentView_Previews",
+              "usr": "s:6alcalc20ContentView_PreviewsV"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:6alcalc20ContentView_PreviewsVACycfc",
+          "mangledName": "$s6alcalc20ContentView_PreviewsVACycfc",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "declAttributes": [
+            "Custom"
+          ],
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:6alcalc20ContentView_PreviewsV",
+      "mangledName": "$s6alcalc20ContentView_PreviewsV",
+      "moduleName": "alcalc",
+      "declAttributes": [
+        "Custom"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "PreviewProvider",
+          "printedName": "PreviewProvider",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Previews",
+              "printedName": "Previews",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OpaqueTypeArchetype",
+                  "printedName": "some SwiftUI.View",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "View",
+                      "printedName": "SwiftUI.View",
+                      "usr": "s:7SwiftUI4ViewP"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "usr": "s:7SwiftUI15PreviewProviderP",
+          "mangledName": "$s7SwiftUI15PreviewProviderP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_PreviewProvider",
+          "printedName": "_PreviewProvider",
+          "usr": "s:7SwiftUI16_PreviewProviderP",
+          "mangledName": "$s7SwiftUI16_PreviewProviderP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "alcalc",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "alcalcApp",
+      "printedName": "alcalcApp",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "body",
+          "printedName": "body",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "OpaqueTypeArchetype",
+              "printedName": "some SwiftUI.Scene",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Scene",
+                  "printedName": "SwiftUI.Scene",
+                  "usr": "s:7SwiftUI5SceneP"
+                }
+              ]
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc0A3AppV4bodyQrvp",
+          "mangledName": "$s6alcalc0A3AppV4bodyQrvp",
+          "moduleName": "alcalc",
+          "declAttributes": [
+            "Custom"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OpaqueTypeArchetype",
+                  "printedName": "some SwiftUI.Scene",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Scene",
+                      "printedName": "SwiftUI.Scene",
+                      "usr": "s:7SwiftUI5SceneP"
+                    }
+                  ]
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc0A3AppV4bodyQrvg",
+              "mangledName": "$s6alcalc0A3AppV4bodyQrvg",
+              "moduleName": "alcalc",
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "alcalcApp",
+              "printedName": "alcalc.alcalcApp",
+              "usr": "s:6alcalc0A3AppV"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:6alcalc0A3AppVACycfc",
+          "mangledName": "$s6alcalc0A3AppVACycfc",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "declAttributes": [
+            "Custom"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Function",
+          "name": "$main",
+          "printedName": "$main()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:6alcalc0A3AppV5$mainyyFZ",
+          "mangledName": "$s6alcalc0A3AppV5$mainyyFZ",
+          "moduleName": "alcalc",
+          "static": true,
+          "implicit": true,
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:6alcalc0A3AppV",
+      "mangledName": "$s6alcalc0A3AppV",
+      "moduleName": "alcalc",
+      "declAttributes": [
+        "MainType"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "App",
+          "printedName": "App",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Body",
+              "printedName": "Body",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OpaqueTypeArchetype",
+                  "printedName": "some SwiftUI.Scene",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Scene",
+                      "printedName": "SwiftUI.Scene",
+                      "usr": "s:7SwiftUI5SceneP"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "usr": "s:7SwiftUI3AppP",
+          "mangledName": "$s7SwiftUI3AppP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "alcalc",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "Shop",
+      "printedName": "Shop",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "body",
+          "printedName": "body",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "OpaqueTypeArchetype",
+              "printedName": "some SwiftUI.View",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "View",
+                  "printedName": "SwiftUI.View",
+                  "usr": "s:7SwiftUI4ViewP"
+                }
+              ]
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc4ShopV4bodyQrvp",
+          "mangledName": "$s6alcalc4ShopV4bodyQrvp",
+          "moduleName": "alcalc",
+          "declAttributes": [
+            "Custom"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OpaqueTypeArchetype",
+                  "printedName": "some SwiftUI.View",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "View",
+                      "printedName": "SwiftUI.View",
+                      "usr": "s:7SwiftUI4ViewP"
+                    }
+                  ]
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc4ShopV4bodyQrvg",
+              "mangledName": "$s6alcalc4ShopV4bodyQrvg",
+              "moduleName": "alcalc",
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Shop",
+              "printedName": "alcalc.Shop",
+              "usr": "s:6alcalc4ShopV"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:6alcalc4ShopVACycfc",
+          "mangledName": "$s6alcalc4ShopVACycfc",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:6alcalc4ShopV",
+      "mangledName": "$s6alcalc4ShopV",
+      "moduleName": "alcalc",
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "View",
+          "printedName": "View",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Body",
+              "printedName": "Body",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OpaqueTypeArchetype",
+                  "printedName": "some SwiftUI.View",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "View",
+                      "printedName": "SwiftUI.View",
+                      "usr": "s:7SwiftUI4ViewP"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "usr": "s:7SwiftUI4ViewP",
+          "mangledName": "$s7SwiftUI4ViewP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "Shop_Previews",
+      "printedName": "Shop_Previews",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "previews",
+          "printedName": "previews",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "OpaqueTypeArchetype",
+              "printedName": "some SwiftUI.View",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "View",
+                  "printedName": "SwiftUI.View",
+                  "usr": "s:7SwiftUI4ViewP"
+                }
+              ]
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc13Shop_PreviewsV8previewsQrvpZ",
+          "mangledName": "$s6alcalc13Shop_PreviewsV8previewsQrvpZ",
+          "moduleName": "alcalc",
+          "static": true,
+          "declAttributes": [
+            "Custom"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OpaqueTypeArchetype",
+                  "printedName": "some SwiftUI.View",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "View",
+                      "printedName": "SwiftUI.View",
+                      "usr": "s:7SwiftUI4ViewP"
+                    }
+                  ]
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc13Shop_PreviewsV8previewsQrvgZ",
+              "mangledName": "$s6alcalc13Shop_PreviewsV8previewsQrvgZ",
+              "moduleName": "alcalc",
+              "static": true,
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Shop_Previews",
+              "printedName": "alcalc.Shop_Previews",
+              "usr": "s:6alcalc13Shop_PreviewsV"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:6alcalc13Shop_PreviewsVACycfc",
+          "mangledName": "$s6alcalc13Shop_PreviewsVACycfc",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "declAttributes": [
+            "Custom"
+          ],
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:6alcalc13Shop_PreviewsV",
+      "mangledName": "$s6alcalc13Shop_PreviewsV",
+      "moduleName": "alcalc",
+      "declAttributes": [
+        "Custom"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "PreviewProvider",
+          "printedName": "PreviewProvider",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Previews",
+              "printedName": "Previews",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OpaqueTypeArchetype",
+                  "printedName": "some SwiftUI.View",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "View",
+                      "printedName": "SwiftUI.View",
+                      "usr": "s:7SwiftUI4ViewP"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "usr": "s:7SwiftUI15PreviewProviderP",
+          "mangledName": "$s7SwiftUI15PreviewProviderP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_PreviewProvider",
+          "printedName": "_PreviewProvider",
+          "usr": "s:7SwiftUI16_PreviewProviderP",
+          "mangledName": "$s7SwiftUI16_PreviewProviderP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "alcalc",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "theMainScreen",
+      "printedName": "theMainScreen",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "_pressM",
+          "printedName": "_pressM",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "State",
+              "printedName": "SwiftUI.State<Swift.Bool>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "usr": "s:7SwiftUI5StateV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc13theMainScreenV7_pressM33_85234EF9BEDDF3E51B06037571CBED45LL7SwiftUI5StateVySbGvp",
+          "mangledName": "$s6alcalc13theMainScreenV7_pressM33_85234EF9BEDDF3E51B06037571CBED45LL7SwiftUI5StateVySbGvp",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "_pressP",
+          "printedName": "_pressP",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "State",
+              "printedName": "SwiftUI.State<Swift.Bool>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "usr": "s:7SwiftUI5StateV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc13theMainScreenV7_pressP33_85234EF9BEDDF3E51B06037571CBED45LL7SwiftUI5StateVySbGvp",
+          "mangledName": "$s6alcalc13theMainScreenV7_pressP33_85234EF9BEDDF3E51B06037571CBED45LL7SwiftUI5StateVySbGvp",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 1,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "_pressS",
+          "printedName": "_pressS",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "State",
+              "printedName": "SwiftUI.State<Swift.Bool>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "usr": "s:7SwiftUI5StateV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc13theMainScreenV7_pressS33_85234EF9BEDDF3E51B06037571CBED45LL7SwiftUI5StateVySbGvp",
+          "mangledName": "$s6alcalc13theMainScreenV7_pressS33_85234EF9BEDDF3E51B06037571CBED45LL7SwiftUI5StateVySbGvp",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 2,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "body",
+          "printedName": "body",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "OpaqueTypeArchetype",
+              "printedName": "some SwiftUI.View",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "View",
+                  "printedName": "SwiftUI.View",
+                  "usr": "s:7SwiftUI4ViewP"
+                }
+              ]
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc13theMainScreenV4bodyQrvp",
+          "mangledName": "$s6alcalc13theMainScreenV4bodyQrvp",
+          "moduleName": "alcalc",
+          "declAttributes": [
+            "Custom"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OpaqueTypeArchetype",
+                  "printedName": "some SwiftUI.View",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "View",
+                      "printedName": "SwiftUI.View",
+                      "usr": "s:7SwiftUI4ViewP"
+                    }
+                  ]
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc13theMainScreenV4bodyQrvg",
+              "mangledName": "$s6alcalc13theMainScreenV4bodyQrvg",
+              "moduleName": "alcalc",
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "theMainScreen",
+              "printedName": "alcalc.theMainScreen",
+              "usr": "s:6alcalc13theMainScreenV"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:6alcalc13theMainScreenVACycfc",
+          "mangledName": "$s6alcalc13theMainScreenVACycfc",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:6alcalc13theMainScreenV",
+      "mangledName": "$s6alcalc13theMainScreenV",
+      "moduleName": "alcalc",
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "View",
+          "printedName": "View",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Body",
+              "printedName": "Body",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OpaqueTypeArchetype",
+                  "printedName": "some SwiftUI.View",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "View",
+                      "printedName": "SwiftUI.View",
+                      "usr": "s:7SwiftUI4ViewP"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "usr": "s:7SwiftUI4ViewP",
+          "mangledName": "$s7SwiftUI4ViewP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "theMainScreen_Previews",
+      "printedName": "theMainScreen_Previews",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "previews",
+          "printedName": "previews",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "OpaqueTypeArchetype",
+              "printedName": "some SwiftUI.View",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "View",
+                  "printedName": "SwiftUI.View",
+                  "usr": "s:7SwiftUI4ViewP"
+                }
+              ]
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc22theMainScreen_PreviewsV8previewsQrvpZ",
+          "mangledName": "$s6alcalc22theMainScreen_PreviewsV8previewsQrvpZ",
+          "moduleName": "alcalc",
+          "static": true,
+          "declAttributes": [
+            "Custom"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OpaqueTypeArchetype",
+                  "printedName": "some SwiftUI.View",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "View",
+                      "printedName": "SwiftUI.View",
+                      "usr": "s:7SwiftUI4ViewP"
+                    }
+                  ]
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc22theMainScreen_PreviewsV8previewsQrvgZ",
+              "mangledName": "$s6alcalc22theMainScreen_PreviewsV8previewsQrvgZ",
+              "moduleName": "alcalc",
+              "static": true,
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "theMainScreen_Previews",
+              "printedName": "alcalc.theMainScreen_Previews",
+              "usr": "s:6alcalc22theMainScreen_PreviewsV"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:6alcalc22theMainScreen_PreviewsVACycfc",
+          "mangledName": "$s6alcalc22theMainScreen_PreviewsVACycfc",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "declAttributes": [
+            "Custom"
+          ],
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:6alcalc22theMainScreen_PreviewsV",
+      "mangledName": "$s6alcalc22theMainScreen_PreviewsV",
+      "moduleName": "alcalc",
+      "declAttributes": [
+        "Custom"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "PreviewProvider",
+          "printedName": "PreviewProvider",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Previews",
+              "printedName": "Previews",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OpaqueTypeArchetype",
+                  "printedName": "some SwiftUI.View",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "View",
+                      "printedName": "SwiftUI.View",
+                      "usr": "s:7SwiftUI4ViewP"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "usr": "s:7SwiftUI15PreviewProviderP",
+          "mangledName": "$s7SwiftUI15PreviewProviderP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_PreviewProvider",
+          "printedName": "_PreviewProvider",
+          "usr": "s:7SwiftUI16_PreviewProviderP",
+          "mangledName": "$s7SwiftUI16_PreviewProviderP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "alcalc",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "yourProgress",
+      "printedName": "yourProgress",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "body",
+          "printedName": "body",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "OpaqueTypeArchetype",
+              "printedName": "some SwiftUI.View",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "View",
+                  "printedName": "SwiftUI.View",
+                  "usr": "s:7SwiftUI4ViewP"
+                }
+              ]
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc12yourProgressV4bodyQrvp",
+          "mangledName": "$s6alcalc12yourProgressV4bodyQrvp",
+          "moduleName": "alcalc",
+          "declAttributes": [
+            "Custom"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OpaqueTypeArchetype",
+                  "printedName": "some SwiftUI.View",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "View",
+                      "printedName": "SwiftUI.View",
+                      "usr": "s:7SwiftUI4ViewP"
+                    }
+                  ]
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc12yourProgressV4bodyQrvg",
+              "mangledName": "$s6alcalc12yourProgressV4bodyQrvg",
+              "moduleName": "alcalc",
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "yourProgress",
+              "printedName": "alcalc.yourProgress",
+              "usr": "s:6alcalc12yourProgressV"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:6alcalc12yourProgressVACycfc",
+          "mangledName": "$s6alcalc12yourProgressVACycfc",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:6alcalc12yourProgressV",
+      "mangledName": "$s6alcalc12yourProgressV",
+      "moduleName": "alcalc",
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "View",
+          "printedName": "View",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Body",
+              "printedName": "Body",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OpaqueTypeArchetype",
+                  "printedName": "some SwiftUI.View",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "View",
+                      "printedName": "SwiftUI.View",
+                      "usr": "s:7SwiftUI4ViewP"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "usr": "s:7SwiftUI4ViewP",
+          "mangledName": "$s7SwiftUI4ViewP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "yourProgress_Previews",
+      "printedName": "yourProgress_Previews",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "previews",
+          "printedName": "previews",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "OpaqueTypeArchetype",
+              "printedName": "some SwiftUI.View",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "View",
+                  "printedName": "SwiftUI.View",
+                  "usr": "s:7SwiftUI4ViewP"
+                }
+              ]
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6alcalc21yourProgress_PreviewsV8previewsQrvpZ",
+          "mangledName": "$s6alcalc21yourProgress_PreviewsV8previewsQrvpZ",
+          "moduleName": "alcalc",
+          "static": true,
+          "declAttributes": [
+            "Custom"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OpaqueTypeArchetype",
+                  "printedName": "some SwiftUI.View",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "View",
+                      "printedName": "SwiftUI.View",
+                      "usr": "s:7SwiftUI4ViewP"
+                    }
+                  ]
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6alcalc21yourProgress_PreviewsV8previewsQrvgZ",
+              "mangledName": "$s6alcalc21yourProgress_PreviewsV8previewsQrvgZ",
+              "moduleName": "alcalc",
+              "static": true,
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "yourProgress_Previews",
+              "printedName": "alcalc.yourProgress_Previews",
+              "usr": "s:6alcalc21yourProgress_PreviewsV"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:6alcalc21yourProgress_PreviewsVACycfc",
+          "mangledName": "$s6alcalc21yourProgress_PreviewsVACycfc",
+          "moduleName": "alcalc",
+          "implicit": true,
+          "declAttributes": [
+            "Custom"
+          ],
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:6alcalc21yourProgress_PreviewsV",
+      "mangledName": "$s6alcalc21yourProgress_PreviewsV",
+      "moduleName": "alcalc",
+      "declAttributes": [
+        "Custom"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "PreviewProvider",
+          "printedName": "PreviewProvider",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Previews",
+              "printedName": "Previews",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OpaqueTypeArchetype",
+                  "printedName": "some SwiftUI.View",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "View",
+                      "printedName": "SwiftUI.View",
+                      "usr": "s:7SwiftUI4ViewP"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "usr": "s:7SwiftUI15PreviewProviderP",
+          "mangledName": "$s7SwiftUI15PreviewProviderP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_PreviewProvider",
+          "printedName": "_PreviewProvider",
+          "usr": "s:7SwiftUI16_PreviewProviderP",
+          "mangledName": "$s7SwiftUI16_PreviewProviderP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
+        }
+      ]
+    }
+  ],
+  "json_format_version": 6
+}

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>7D2719BB-DC22-4461-9E7C-6784012540F3</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>7D2719BB-DC22-4461-9E7C-6784012540F3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>672853941.31650805</real>
+			<key>timeStoppedRecording</key>
+			<real>672853972.92564404</real>
+			<key>title</key>
+			<string>Run alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>7D2719BB-DC22-4461-9E7C-6784012540F3</string>
+		</dict>
+		<key>B8E004DC-4FD8-4B35-BE70-D457FDF21BFE</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B8E004DC-4FD8-4B35-BE70-D457FDF21BFE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>672853691.32411504</real>
+			<key>timeStoppedRecording</key>
+			<real>672853818.72888803</real>
+			<key>title</key>
+			<string>Run alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>B8E004DC-4FD8-4B35-BE70-D457FDF21BFE</string>
+		</dict>
+		<key>D4187DD2-2A8C-4AA3-B65D-42AFD88FD6EA</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D4187DD2-2A8C-4AA3-B65D-42AFD88FD6EA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>672853822.28262901</real>
+			<key>timeStoppedRecording</key>
+			<real>672853940.14851105</real>
+			<key>title</key>
+			<string>Run alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>D4187DD2-2A8C-4AA3-B65D-42AFD88FD6EA</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

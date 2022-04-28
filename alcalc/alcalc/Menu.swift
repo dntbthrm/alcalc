@@ -7,27 +7,25 @@
 
 import SwiftUI
 
-
-    
-
 var show = false
-
+struct Drink: Identifiable{
+    var id = UUID()
+    let name: String
+    let alcohol: String
+    let volume: String
+}
+var drinksArray = [
+    Drink(name:"Vodka", alcohol: "\(40)", volume:"\(40)"),
+    Drink(name:"Vine", alcohol:"\(40)", volume:"\(40)"),
+    Drink(name:"Bear", alcohol:"\(40)", volume:"\(40)"),
+    Drink(name:"Rom", alcohol:"\(40)", volume:"\(40)")
+]
 
 struct Menu: View {
-    struct Drink: Identifiable{
-        var id = UUID()
-        let name: String
-        let alcohol: String
-        let volume: String
-    }
+    
 
 
-    @State var drinksArray = [
-        Drink(name:"Vodka", alcohol: "\(40)", volume:"\(40)"),
-        Drink(name:"Vine", alcohol:"\(40)", volume:"\(40)"),
-        Drink(name:"Bear", alcohol:"\(40)", volume:"\(40)"),
-        Drink(name:"Rom", alcohol:"\(40)", volume:"\(40)")
-    ]
+    
     
     @State var show = false;
     
@@ -60,6 +58,9 @@ struct Menu: View {
                     Spacer()
                     Button(action: {
                         drinksArray.append(Drink(name: name, alcohol: alcohol, volume: volume))
+                        name = ""
+                        alcohol = ""
+                        volume = ""
                         self.show = false
                     }, label: {
                         Text("Close")
@@ -74,9 +75,6 @@ struct Menu: View {
         Button("Add Drink"){
             self.show = true
         }
-        
-        
-        
 
     }
 }

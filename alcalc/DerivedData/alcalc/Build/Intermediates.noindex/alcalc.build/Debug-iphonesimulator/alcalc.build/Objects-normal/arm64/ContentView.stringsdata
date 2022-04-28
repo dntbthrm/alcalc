@@ -1,0 +1,24 @@
+{
+  "source": "/Users/tatiana/Documents/чудо-проект/firstBranch/alcalcproject/alcalc/alcalc/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Select Gender"
+      },
+      {
+        "comment": "",
+        "key": "Weight"
+      },
+      {
+        "comment": "",
+        "key": "Birhtdate"
+      },
+      {
+        "comment": "",
+        "key": "Start Party!!!"
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,24 @@
+{
+  "source": "/Users/tatiana/Documents/чудо-проект/firstBranch/alcalcproject/alcalc/alcalc/theMainScreen.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "here will be percentage"
+      },
+      {
+        "comment": "",
+        "key": "A"
+      },
+      {
+        "comment": "",
+        "key": "Menu"
+      },
+      {
+        "comment": "",
+        "key": "your \n progress"
+      }
+    ]
+  },
+  "version": 1
+}
