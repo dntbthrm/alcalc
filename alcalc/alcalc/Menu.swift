@@ -43,11 +43,17 @@ struct Menu: View {
         
         if(show){
         ZStack {
-                
+           
                 Color.white
                 VStack {
                     
                     VStack{
+                        Button(action: {
+                            self.show = false
+                        }, label:{
+                            Text("X")
+                        }).position(x: 250, y: 15)
+                        Spacer()
                         TextField("Name", text: $name)
                             TextField("Alcohol", text: $alcohol)
                             TextField("Volume", text: $volume)
