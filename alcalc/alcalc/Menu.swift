@@ -39,11 +39,14 @@ struct Menu: View {
     var body: some View {
         
         List(drinksArray, id: \.id) { index in
-                Text(index.name + " " + "\(index.alcohol)%" + " " + "\(index.volume)ml").onTapGesture{
-                    name = "\(index.name)"
-                    alcohol = "\(index.alcohol)"
-                    showDrink = true
-                }
+            HStack{
+                    Text(index.name + " " + "\(index.alcohol)%" + " " + "\(index.volume)ml")
+                    Spacer()
+            }.contentShape(Rectangle()).onTapGesture{
+                name = "\(index.name)"
+                alcohol = "\(index.alcohol)"
+                showDrink = true
+            }
         }
         
         if(showAdd){
