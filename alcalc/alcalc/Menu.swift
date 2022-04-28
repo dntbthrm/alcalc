@@ -43,18 +43,17 @@ struct Menu: View {
         
         if(show){
         ZStack {
+                
                 Color.white
                 VStack {
+                    
                     VStack{
-                    Form{
-                        Section{
-                            TextField("Name", text: $name)
+                        TextField("Name", text: $name)
                             TextField("Alcohol", text: $alcohol)
                             TextField("Volume", text: $volume)
-
-                        }
                     }
-                    }.padding()
+                            
+                    
                     Spacer()
                     Button(action: {
                         drinksArray.append(Drink(name: name, alcohol: alcohol, volume: volume))
@@ -63,8 +62,8 @@ struct Menu: View {
                         volume = ""
                         self.show = false
                     }, label: {
-                        Text("Close")
-                    })
+                        Text("Add")
+                    }).disabled(name.isEmpty || alcohol.isEmpty || volume.isEmpty)
                 }.padding()
             }
             .frame(width: 300, height: 200)
