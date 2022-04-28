@@ -7,35 +7,76 @@
 
 import SwiftUI
 
-struct Drink: Identifiable{
-    var id = UUID()
-    let name: String
-    let alcohol: String
-    let volume: String
-}
 
-var drinksArray = [
-    Drink(name:"Vodka", alcohol: "\(40)", volume:"\(40)"),
-    Drink(name:"Vine", alcohol:"\(40)", volume:"\(40)"),
-    Drink(name:"Bear", alcohol:"\(40)", volume:"\(40)"),
-    Drink(name:"Rom", alcohol:"\(40)", volume:"\(40)")
-]
+    
+
+var show = false
+
 
 struct Menu: View {
+    struct Drink: Identifiable{
+        var id = UUID()
+        let name: String
+        let alcohol: String
+        let volume: String
+    }
+
+
+    @State var drinksArray = [
+        Drink(name:"Vodka", alcohol: "\(40)", volume:"\(40)"),
+        Drink(name:"Vine", alcohol:"\(40)", volume:"\(40)"),
+        Drink(name:"Bear", alcohol:"\(40)", volume:"\(40)"),
+        Drink(name:"Rom", alcohol:"\(40)", volume:"\(40)")
+    ]
+    
+    @State var show = false;
+    
+    @State var name: String
+    @State var alcohol: String
+    @State var volume: String
+    
+    
     
     var body: some View {
+        
         List(drinksArray) {
-            Text($0.name + "  " + "\($0.alcohol)%" + "  " + "\($0.volume)ml")
+         Text($0.name + " " + "\($0.alcohol)%" + " " + "\($0.volume)ml")
+         }
+        
+        if(show){
+        ZStack {
+                Color.white
+                VStack {
+                    VStack{
+                    Form{
+                        Section{
+                            TextField("Name", text: $name)
+                            TextField("Alcohol", text: $alcohol)
+                            TextField("Volume", text: $volume)
+
+                        }
+                    }
+                    }.padding()
+                    Spacer()
+                    Button(action: {
+                        drinksArray.append(Drink(name: name, alcohol: alcohol, volume: volume))
+                        self.show = false
+                    }, label: {
+                        Text("Close")
+                    })
+                }.padding()
+            }
+            .frame(width: 300, height: 200)
+            .cornerRadius(20).shadow(radius: 20)
         }
+        
             
-            NavigationLink("Add Drink", destination: AddDrink(name: "", alcohol: "", volume: ""))
+        Button("Add Drink"){
+            self.show = true
+        }
+        
+        
         
 
-    }
-}
-
-struct Menu_Previews: PreviewProvider {
-    static var previews: some View {
-        Menu()
     }
 }

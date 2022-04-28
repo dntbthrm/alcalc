@@ -38,7 +38,7 @@ struct theMainScreen: View {
         }.frame(maxHeight: .infinity, alignment: .bottom)
         HStack{
             HStack{
-                NavigationLink("Menu", destination: Menu())
+                NavigationLink("Menu", destination: Menu(name: "", alcohol: "", volume: ""))
             }
             Button (action:
                     {
