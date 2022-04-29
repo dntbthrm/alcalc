@@ -49,7 +49,7 @@ struct Menu: View {
         }
     Button("Add Drink"){
         self.showAdd = true
-    }
+    }.disabled(showDrink)
             }
         
         if(showAdd){
