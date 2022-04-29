@@ -45,7 +45,7 @@ struct theMainScreen: View {
                         self.pressS.toggle()
                     })
                     {
-                        Text("your \n progress").foregroundColor(.white)
+                        Text("Shop").foregroundColor(.white)
                             .frame(width: 100, height: 100)
                             .background(Color.red)
                             .cornerRadius(15)

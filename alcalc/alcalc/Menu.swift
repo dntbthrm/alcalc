@@ -22,11 +22,6 @@ var drinksArray = [
 ]
 
 struct Menu: View {
-    
-
-
-    
-    
     @State var showAdd = false;
     @State var showDrink = false;
     

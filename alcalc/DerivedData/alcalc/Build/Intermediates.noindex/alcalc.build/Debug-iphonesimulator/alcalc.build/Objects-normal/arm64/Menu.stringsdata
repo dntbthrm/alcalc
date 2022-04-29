@@ -20,7 +20,15 @@
       },
       {
         "comment": "",
-        "key": "Close"
+        "key": "X"
+      },
+      {
+        "comment": "",
+        "key": "Add"
+      },
+      {
+        "comment": "",
+        "key": "Drink"
       }
     ]
   },
