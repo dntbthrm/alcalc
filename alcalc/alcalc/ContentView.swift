@@ -8,7 +8,7 @@
 import SwiftUI
 
 var weightGlobal: String = ""
-var genderGlobal: Int = 0
+var koeff: Float = 0
 
 struct ContentView: View {
     
@@ -46,7 +46,12 @@ struct ContentView: View {
                     let age = Int(time/(60*60*24*365))
                     Button(action: {
                         weightGlobal = weight
-                        genderGlobal = selectedGender
+                        if selectedGender == 0{
+                            koeff = 0.7
+                        }
+                        else{
+                            koeff = 0.6
+                        }
                         self.good = true
                     }, label:
                     {

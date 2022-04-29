@@ -13,16 +13,19 @@ struct Drinked: Identifiable{
     let alcohol: String
     let volume: String
 }
-
 var DrinkedList: [Drinked] = []
 
 struct theMainScreen: View {
     @State private var pressM = false
     @State private var pressP = false
     @State private var pressS = false
+    @State private var allVol: Int = 0
+    @State private var allAlc: Float = 0
+    @State private var promille: Float = 0
     var body: some View {
+        
         HStack{
-            Text("here will be percentage").frame(alignment: .leading)
+            Text("\(String(format: "%.2f", promille))"+"‰")
             Button (action:
                     {
                         self.pressP.toggle()
@@ -47,7 +50,7 @@ struct theMainScreen: View {
         }.frame(maxHeight: .infinity, alignment: .bottom)
         HStack{
             HStack{
-                NavigationLink("Menu", destination: Menu(name: "", alcohol: "", volume: ""))
+                NavigationLink("Menu", destination: Menu(name: "", alcohol: "", volume: "", allVol: $allVol, allAlc: $allAlc, promille: $promille))
             }
             Button (action:
                     {

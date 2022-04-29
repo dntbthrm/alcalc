@@ -12,7 +12,11 @@
       },
       {
         "comment": "",
-        "key": "Birhtdate"
+        "key": "Birthdate"
+      },
+      {
+        "comment": "",
+        "key": "Confirm"
       },
       {
         "comment": "",
@@ -24,7 +28,7 @@
       },
       {
         "comment": "",
-        "key": "Version: 0.1"
+        "key": "Version 0.1"
       }
     ]
   },

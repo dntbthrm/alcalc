@@ -22,14 +22,16 @@ var drinksArray = [
     Drink(name:"Rom", alcohol:"\(40)", volume:"\(40)")
 ]
 
+
 struct Menu: View {
     @State var showAdd = false;
     @State var showDrink = false;
-    
     @State var name: String
     @State var alcohol: String
     @State var volume: String
-    
+    @Binding var allVol: Int
+    @Binding var allAlc: Float
+    @Binding var promille: Float
     
     
     var body: some View {
@@ -96,7 +98,6 @@ struct Menu: View {
            
                 Color.white
                 VStack {
-                    
                     VStack{
                         Button(action: {
                             name = ""
@@ -113,6 +114,10 @@ struct Menu: View {
                         Spacer()
                         Button(action: {
                             DrinkedList.append(Drinked(name: name, alcohol: alcohol, volume: volume))
+                            allVol += Int(volume) ?? 0
+                            allAlc += (Float(alcohol) ?? 0)*0.01
+                            promille = Float(allVol)*allAlc*0.8/(koeff*(Float(weightGlobal) ?? 0))
+                            print(promille)
                             name = ""
                             alcohol = ""
                             volume = ""
