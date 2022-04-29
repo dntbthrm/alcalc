@@ -7,6 +7,15 @@
 
 import SwiftUI
 
+struct Drinked: Identifiable{
+    var id = UUID()
+    let name: String
+    let alcohol: String
+    let volume: String
+}
+
+var DrinkedList: [Drinked] = []
+
 struct theMainScreen: View {
     @State private var pressM = false
     @State private var pressP = false

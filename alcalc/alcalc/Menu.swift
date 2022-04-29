@@ -14,6 +14,7 @@ struct Drink: Identifiable{
     let alcohol: String
     let volume: String
 }
+
 var drinksArray = [
     Drink(name:"Vodka", alcohol: "\(40)", volume:"\(40)"),
     Drink(name:"Vine", alcohol:"\(40)", volume:"\(40)"),
@@ -33,6 +34,9 @@ struct Menu: View {
     
     var body: some View {
         
+        ZStack{
+            
+            VStack{
         List(drinksArray, id: \.id) { index in
             HStack{
                     Text(index.name + " " + "\(index.alcohol)%" + " " + "\(index.volume)ml")
@@ -41,8 +45,12 @@ struct Menu: View {
                 name = "\(index.name)"
                 alcohol = "\(index.alcohol)"
                 showDrink = true
-            }
+            }.disabled(showAdd)
         }
+    Button("Add Drink"){
+        self.showAdd = true
+    }
+            }
         
         if(showAdd){
         ZStack {
@@ -104,23 +112,21 @@ struct Menu: View {
                             TextField("Volume", text: $volume)
                         Spacer()
                         Button(action: {
+                            DrinkedList.append(Drinked(name: name, alcohol: alcohol, volume: volume))
                             name = ""
                             alcohol = ""
                             volume = ""
                             self.showDrink = false
                         }, label:{
                             Text("Drink")
-                        }).colorMultiply(Color.orange)
+                        }).colorMultiply(Color.orange).disabled(name.isEmpty || alcohol.isEmpty || volume.isEmpty)
                     }
                 }.padding()
         }.frame(width: 300, height: 200)
                 .cornerRadius(20).shadow(radius: 20)
         }
-        
-            
-        Button("Add Drink"){
-            self.showAdd = true
         }
+
 
     
 }

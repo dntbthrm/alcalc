@@ -9,7 +9,10 @@ import SwiftUI
 
 struct Shop: View {
     var body: some View {
-        Text("Shop is in process")
+        
+        List(DrinkedList, id: \.id) { index in
+                    Text(index.name + " " + "\(index.alcohol)%" + " " + "\(index.volume)ml")
+        }
     }
 }
 
