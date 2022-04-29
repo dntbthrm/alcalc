@@ -13,9 +13,9 @@ struct ContentView: View {
     @State var weight: String=""
     var gender = ["Male" , "Female"]
     @State var selectedGender: Int = 0
+    
     @State var alert = false
-    var toDate = Date()
-    var age: Int = 0
+    
     var body: some View {
         
         
@@ -23,25 +23,6 @@ struct ContentView: View {
             
             Form {  //открытие формы
                 Section{    //открытие группы формы
-                    
-                    TextField("Weight", text: $weight,onEditingChanged:{ item in print("onEditingChanged:\(item):\(self.weight)")},
-                              onCommit: {print ("Submitted: \(self.weight)")}).keyboardType(.phonePad)
-                    //ввод веса
-                    
-                    DatePicker(
-                        "Birhtdate",
-                        selection: $birthday,
-                        displayedComponents: .date) //выбор даты рождения
-                    let time = toDate.timeIntervalSince(self.birthday)
-                    let age = Int(time/(60*60*24*365))
-                    if (age<18)
-                    {
-                        Text("Drink some tea, your age is " + "\(age)")
-                    }
-                    else{
-                        Text("Welcome, your age is " + "\(age)")
-                    }
-                    //instead of if-else must appear an alert
                     Picker(
                         selection: $selectedGender,
                         label: Text("Select Gender"))
@@ -50,19 +31,35 @@ struct ContentView: View {
                             Text(self.gender[$0])
                         }
                     }.pickerStyle(SegmentedPickerStyle()) //выбор пола
+                    
+                    
+                    TextField("Weight",text: $weight)
+                        .keyboardType(/*@START_MENU_TOKEN@*/.numberPad/*@END_MENU_TOKEN@*/)
+                    //ввод веса
+                    
+                    DatePicker(
+                        "Birhtdate",
+                        selection: $birthday,
+                        displayedComponents: .date) //выбор даты рождения
+                }
+                .padding()
+                Section{
+                    VStack {
+                        NavigationLink("Start Party!!!", destination: theMainScreen())
+                    }.foregroundColor(.purple).padding()
+                    VStack{ NavigationLink("Settings",destination: settingsScreen())
+                    }.foregroundColor(.purple).padding()
                 }
                 
+                Section{
+                    Text("Version: 0.1").fontWeight(.ultraLight).padding(.leading, 130.0)
+                }
                 
-                HStack {
-                    NavigationLink("Start Party!!!", destination: theMainScreen())
-                }.padding().foregroundColor(.blue)
             }
         }
     }
     
 }
-
-
 
 
 struct ContentView_Previews: PreviewProvider {
