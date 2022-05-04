@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct Drink: Identifiable{
+struct Drink: Hashable{
     var id = UUID()
     let name: String
     let alcohol: String
@@ -33,22 +33,35 @@ struct Menu: View {
     @Binding var allAlc: Float
     @Binding var promille: Float
     
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
     
     var body: some View {
+        
+
         
         ZStack{
             
             VStack{
-        List(drinksArray, id: \.id) { index in
-            HStack{
-                    Text(index.name + " " + "\(index.alcohol)%" + " " + "\(index.volume)ml")
-                    Spacer()
-            }.contentShape(Rectangle()).onTapGesture{
-                name = "\(index.name)"
-                alcohol = "\(index.alcohol)"
-                showDrink = true
-            }.disabled(showAdd)
-        }
+        
+                ScrollView{
+                    LazyVGrid(columns: columns, spacing: 20){
+                        ForEach(drinksArray, id: \.self){ item in
+                            VStack(alignment: .leading, spacing: 10){
+                                Text(item.name).bold()
+                                Text("Alcohol: " + item.alcohol + "%")
+                                Text("Volume: " + item.volume + "ml")
+                            }.frame(width: 175, height: 175).background(Color.blue).border(Color.white).cornerRadius(30).foregroundColor(Color.white).onTapGesture{
+                                name = "\(item.name)"
+                                alcohol = "\(item.alcohol)"
+                                showDrink = true
+                            }.disabled(showAdd)
+                        }
+                    }
+                }.padding()
+                
     Button("Add Drink"){
         self.showAdd = true
     }.disabled(showDrink)
@@ -68,7 +81,7 @@ struct Menu: View {
                             self.showAdd = false
                         }, label:{
                             Text("X")
-                        }).position(x: 250, y: 15).colorMultiply(Color.green)
+                        }).position(x: 250, y: 15).colorMultiply(Color.blue)
                         Spacer()
                         TextField("Name", text: $name)
                             TextField("Alcohol", text: $alcohol)
@@ -88,7 +101,7 @@ struct Menu: View {
                     }).disabled(name.isEmpty || alcohol.isEmpty || volume.isEmpty).colorMultiply(Color.green)
                 }.padding()
             }
-            .frame(width: 300, height: 200)
+        .frame(width: 300, height: 200)
             .cornerRadius(20).shadow(radius: 20)
         }
         

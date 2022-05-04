@@ -56,7 +56,7 @@ struct ContentView: View {
                     }, label:
                     {
                         Text("Confirm")
-                   }).colorMultiply(Color.green)//.disabled(weight.isEmpty || age < 18 )
+                    }).colorMultiply(Color.green).disabled(weight.isEmpty /*|| age < 18*/)
 //выбор даты рождения
                 }
                 .padding()
