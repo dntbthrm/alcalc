@@ -17,7 +17,7 @@ struct Drink: Hashable{
 
 var drinksArray = [
     Drink(name:"Vodka", alcohol: "\(40)", volume:"\(40)"),
-    Drink(name:"Vine", alcohol:"\(40)", volume:"\(40)"),
+    Drink(name:"Wine", alcohol:"\(40)", volume:"\(40)"),
     Drink(name:"Bear", alcohol:"\(40)", volume:"\(40)"),
     Drink(name:"Rom", alcohol:"\(40)", volume:"\(40)")
 ]
@@ -52,7 +52,6 @@ struct Menu: View {
                             VStack(alignment: .leading, spacing: 10){
                                 Text(item.name).bold()
                                 Text("Alcohol: " + item.alcohol + "%")
-                                Text("Volume: " + item.volume + "ml")
                             }.frame(width: 175, height: 175).background(Color.blue).border(Color.white).cornerRadius(30).foregroundColor(Color.white).onTapGesture{
                                 name = "\(item.name)"
                                 alcohol = "\(item.alcohol)"
@@ -83,9 +82,11 @@ struct Menu: View {
                             Text("X")
                         }).position(x: 250, y: 15).colorMultiply(Color.blue)
                         Spacer()
-                        TextField("Name", text: $name)
-                            TextField("Alcohol", text: $alcohol)
-                            TextField("Volume", text: $volume)
+                        VStack(alignment: .leading ,spacing: 10){
+                            TextField("Name", text: $name)
+                            TextField("%", text: $alcohol)
+                            TextField("ml", text: $volume)
+                        }
                     }
                             
                     
@@ -121,16 +122,18 @@ struct Menu: View {
                             Text("X")
                         }).position(x: 250, y: 15).colorMultiply(Color.orange)
                         Spacer()
-                        TextField("Name", text: $name)
-                            TextField("Alcohol", text: $alcohol)
-                            TextField("Volume", text: $volume)
+                        VStack(alignment: .leading, spacing: 10){
+                            Text("\(name)").bold()
+                            Text(alcohol + "%")
+                            TextField("ml", text: $volume)
+                        }
                         Spacer()
                         Button(action: {
                             DrinkedList.append(Drinked(name: name, alcohol: alcohol, volume: volume))
-                            allVol += Int(volume) ?? 0
-                            allAlc += (Float(alcohol) ?? 0)*0.01
-                            promille = Float(allVol)*allAlc*0.8/(koeff*(Float(weightGlobal) ?? 0))
-                            print(promille)
+                            allVol = Int(volume) ?? 0
+                            allAlc = (Float(alcohol) ?? 0)*0.01
+                            promille += Float(allVol)*allAlc*0.8/(koeff*(Float(weightGlobal) ?? 0))
+                            
                             name = ""
                             alcohol = ""
                             volume = ""
