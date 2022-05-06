@@ -19,6 +19,7 @@ struct ContentView: View {
     var toDate = Date()
     var age: Int = 0
     @State var good = false
+    @State var alertCont = false
     
     var body: some View {
         
@@ -52,11 +53,19 @@ struct ContentView: View {
                         else{
                             koeff = 0.6
                         }
+                        if age < 18{
+                            self.alertCont = true
+                        }
                         self.good = true
                     }, label:
                     {
                         Text("Confirm")
-                    }).colorMultiply(Color.green).disabled(weight.isEmpty /*|| age < 18*/)
+                    }).colorMultiply(Color.green).disabled(weight.isEmpty)
+                        .alert(isPresented: $alertCont) {
+                            Alert(title: Text("Message"), message: Text("You're too young"), dismissButton: .destructive(Text("OK"), action: {
+                                self.good = false
+                            }))
+                        }
 //выбор даты рождения
                 }
                 .padding()
