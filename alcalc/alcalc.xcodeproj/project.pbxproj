@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		418B730E28154B44007E8292 /* theMainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B730D28154B44007E8292 /* theMainScreen.swift */; };
-		418B731028155300007E8292 /* yourProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B730F28155300007E8292 /* yourProgress.swift */; };
 		418B731528155E33007E8292 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B731428155E33007E8292 /* Shop.swift */; };
 		41F08D16281332EA00003AD1 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F08D15281332EA00003AD1 /* Menu.swift */; };
 		7CA16407281BE9660034FCF2 /* settingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA16406281BE9660034FCF2 /* settingsScreen.swift */; };
@@ -16,11 +15,11 @@
 		7CC9FBBC280F3E3000FC6E19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC9FBBB280F3E3000FC6E19 /* ContentView.swift */; };
 		7CC9FBBE280F3E3100FC6E19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC9FBBD280F3E3100FC6E19 /* Assets.xcassets */; };
 		7CC9FBC1280F3E3100FC6E19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC9FBC0280F3E3100FC6E19 /* Preview Assets.xcassets */; };
+		9E48B3AE2826A93C0081451F /* Progress_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E48B3AD2826A93C0081451F /* Progress_Screen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		418B730D28154B44007E8292 /* theMainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theMainScreen.swift; sourceTree = "<group>"; };
-		418B730F28155300007E8292 /* yourProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yourProgress.swift; sourceTree = "<group>"; };
 		418B7313281557BA007E8292 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
 		418B731428155E33007E8292 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		41F08D15281332EA00003AD1 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
@@ -30,6 +29,7 @@
 		7CC9FBBB280F3E3000FC6E19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 1; usesTabs = 0; wrapsLines = 1; };
 		7CC9FBBD280F3E3100FC6E19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CC9FBC0280F3E3100FC6E19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9E48B3AD2826A93C0081451F /* Progress_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress_Screen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 				418B730D28154B44007E8292 /* theMainScreen.swift */,
 				7CA16406281BE9660034FCF2 /* settingsScreen.swift */,
 				418B731428155E33007E8292 /* Shop.swift */,
-				418B730F28155300007E8292 /* yourProgress.swift */,
+				9E48B3AD2826A93C0081451F /* Progress_Screen.swift */,
 				41F08D15281332EA00003AD1 /* Menu.swift */,
 				418B7313281557BA007E8292 /* cat.png */,
 				7CC9FBBD280F3E3100FC6E19 /* Assets.xcassets */,
@@ -157,10 +157,10 @@
 				41F08D16281332EA00003AD1 /* Menu.swift in Sources */,
 				7CC9FBBC280F3E3000FC6E19 /* ContentView.swift in Sources */,
 				7CA16407281BE9660034FCF2 /* settingsScreen.swift in Sources */,
+				9E48B3AE2826A93C0081451F /* Progress_Screen.swift in Sources */,
 				7CC9FBBA280F3E3000FC6E19 /* alcalcApp.swift in Sources */,
 				418B731528155E33007E8292 /* Shop.swift in Sources */,
 				418B730E28154B44007E8292 /* theMainScreen.swift in Sources */,
-				418B731028155300007E8292 /* yourProgress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

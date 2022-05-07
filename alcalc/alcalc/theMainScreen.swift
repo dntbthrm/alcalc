@@ -40,7 +40,7 @@ struct theMainScreen: View {
                     .padding(.leading)
                     .sheet(isPresented: $pressP)
                         {
-                            yourProgress()
+                            Progress_Screen()
                             
                         }.frame(alignment: .trailing).padding()
         
