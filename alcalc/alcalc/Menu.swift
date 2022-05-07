@@ -25,7 +25,7 @@ var drinksArray = [
 
 struct Menu: View {
     @State var showAdd = false
-    @State var showDrink = false;
+    @State var showDrink = false
     @State var name: String
     @State var alcohol: String
     @State var volume: String
