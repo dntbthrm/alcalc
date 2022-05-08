@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>041410F5-9985-4DBB-A40A-5DC8F440AEE5</key>
+		<key>11405244-9688-4C68-A1A2-2B22CD88E4C9</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,483 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>041410F5-9985-4DBB-A40A-5DC8F440AEE5.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>alcalc project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>alcalc</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build alcalc</string>
-			<key>timeStartedRecording</key>
-			<real>672966290.65756094</real>
-			<key>timeStoppedRecording</key>
-			<real>672966293.23180795</real>
-			<key>title</key>
-			<string>Build alcalc</string>
-			<key>uniqueIdentifier</key>
-			<string>041410F5-9985-4DBB-A40A-5DC8F440AEE5</string>
-		</dict>
-		<key>0E458193-64A5-4B5E-8329-D0A6DAAF2A6B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>0E458193-64A5-4B5E-8329-D0A6DAAF2A6B.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>alcalc project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>alcalc</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build alcalc</string>
-			<key>timeStartedRecording</key>
-			<real>672967077.18432701</real>
-			<key>timeStoppedRecording</key>
-			<real>672967079.57096505</real>
-			<key>title</key>
-			<string>Build alcalc</string>
-			<key>uniqueIdentifier</key>
-			<string>0E458193-64A5-4B5E-8329-D0A6DAAF2A6B</string>
-		</dict>
-		<key>18185D04-EBE4-4A6E-A6A9-4F323F4EAA6E</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>18185D04-EBE4-4A6E-A6A9-4F323F4EAA6E.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>alcalc project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>alcalc</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build alcalc</string>
-			<key>timeStartedRecording</key>
-			<real>672965541.62092304</real>
-			<key>timeStoppedRecording</key>
-			<real>672965544.28838599</real>
-			<key>title</key>
-			<string>Build alcalc</string>
-			<key>uniqueIdentifier</key>
-			<string>18185D04-EBE4-4A6E-A6A9-4F323F4EAA6E</string>
-		</dict>
-		<key>215DF3F9-B6D3-4736-B288-1873A5D26D52</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>215DF3F9-B6D3-4736-B288-1873A5D26D52.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>alcalc project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>alcalc</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build alcalc</string>
-			<key>timeStartedRecording</key>
-			<real>672966766.76892102</real>
-			<key>timeStoppedRecording</key>
-			<real>672966769.16852796</real>
-			<key>title</key>
-			<string>Build alcalc</string>
-			<key>uniqueIdentifier</key>
-			<string>215DF3F9-B6D3-4736-B288-1873A5D26D52</string>
-		</dict>
-		<key>59E4E495-FAE8-4B1F-B089-43CE30112AB5</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>59E4E495-FAE8-4B1F-B089-43CE30112AB5.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>alcalc project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>alcalc</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build alcalc</string>
-			<key>timeStartedRecording</key>
-			<real>672964734.25253296</real>
-			<key>timeStoppedRecording</key>
-			<real>672964736.97338104</real>
-			<key>title</key>
-			<string>Build alcalc</string>
-			<key>uniqueIdentifier</key>
-			<string>59E4E495-FAE8-4B1F-B089-43CE30112AB5</string>
-		</dict>
-		<key>5E361222-F3EE-4E54-8413-300B1AC624F4</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>5E361222-F3EE-4E54-8413-300B1AC624F4.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>alcalc project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>alcalc</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build alcalc</string>
-			<key>timeStartedRecording</key>
-			<real>672957831.96106994</real>
-			<key>timeStoppedRecording</key>
-			<real>672957834.516132</real>
-			<key>title</key>
-			<string>Build alcalc</string>
-			<key>uniqueIdentifier</key>
-			<string>5E361222-F3EE-4E54-8413-300B1AC624F4</string>
-		</dict>
-		<key>671D4D31-13A3-46E4-B70F-EA7DD8DF9BB4</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>671D4D31-13A3-46E4-B70F-EA7DD8DF9BB4.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>alcalc project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>alcalc</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build alcalc</string>
-			<key>timeStartedRecording</key>
-			<real>672968382.10178995</real>
-			<key>timeStoppedRecording</key>
-			<real>672968382.218086</real>
-			<key>title</key>
-			<string>Build alcalc</string>
-			<key>uniqueIdentifier</key>
-			<string>671D4D31-13A3-46E4-B70F-EA7DD8DF9BB4</string>
-		</dict>
-		<key>740C63B8-5FC9-4735-BBEC-5D4D1455C9BF</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>740C63B8-5FC9-4735-BBEC-5D4D1455C9BF.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>alcalc project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>alcalc</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build alcalc</string>
-			<key>timeStartedRecording</key>
-			<real>672966794.77907896</real>
-			<key>timeStoppedRecording</key>
-			<real>672966796.06923497</real>
-			<key>title</key>
-			<string>Build alcalc</string>
-			<key>uniqueIdentifier</key>
-			<string>740C63B8-5FC9-4735-BBEC-5D4D1455C9BF</string>
-		</dict>
-		<key>74A90348-3B41-4FAC-A153-86BD332C5736</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>74A90348-3B41-4FAC-A153-86BD332C5736.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>alcalc project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>alcalc</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build alcalc</string>
-			<key>timeStartedRecording</key>
-			<real>672967390.95132303</real>
-			<key>timeStoppedRecording</key>
-			<real>672967395.157058</real>
-			<key>title</key>
-			<string>Build alcalc</string>
-			<key>uniqueIdentifier</key>
-			<string>74A90348-3B41-4FAC-A153-86BD332C5736</string>
-		</dict>
-		<key>7A51E0C2-DCC9-40E0-A087-6082D2AA9841</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>7A51E0C2-DCC9-40E0-A087-6082D2AA9841.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>alcalc project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>alcalc</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build alcalc</string>
-			<key>timeStartedRecording</key>
-			<real>672967954.00025797</real>
-			<key>timeStoppedRecording</key>
-			<real>672967955.02443898</real>
-			<key>title</key>
-			<string>Build alcalc</string>
-			<key>uniqueIdentifier</key>
-			<string>7A51E0C2-DCC9-40E0-A087-6082D2AA9841</string>
-		</dict>
-		<key>80856D35-4C53-40B3-9735-12C13D8DB31B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>80856D35-4C53-40B3-9735-12C13D8DB31B.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>alcalc project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>alcalc</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build alcalc</string>
-			<key>timeStartedRecording</key>
-			<real>672965024.21003497</real>
-			<key>timeStoppedRecording</key>
-			<real>672965026.32822204</real>
-			<key>title</key>
-			<string>Build alcalc</string>
-			<key>uniqueIdentifier</key>
-			<string>80856D35-4C53-40B3-9735-12C13D8DB31B</string>
-		</dict>
-		<key>8D643B88-4D0B-4828-B54C-FD01389695AE</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>8D643B88-4D0B-4828-B54C-FD01389695AE.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>alcalc project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>alcalc</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build alcalc</string>
-			<key>timeStartedRecording</key>
-			<real>672967624.27734995</real>
-			<key>timeStoppedRecording</key>
-			<real>672967625.61500895</real>
-			<key>title</key>
-			<string>Build alcalc</string>
-			<key>uniqueIdentifier</key>
-			<string>8D643B88-4D0B-4828-B54C-FD01389695AE</string>
-		</dict>
-		<key>9050BB93-5959-4C68-AE3B-8EAB63F05213</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>9050BB93-5959-4C68-AE3B-8EAB63F05213.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>alcalc project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>alcalc</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build alcalc</string>
-			<key>timeStartedRecording</key>
-			<real>672967689.04580498</real>
-			<key>timeStoppedRecording</key>
-			<real>672967690.48358905</real>
-			<key>title</key>
-			<string>Build alcalc</string>
-			<key>uniqueIdentifier</key>
-			<string>9050BB93-5959-4C68-AE3B-8EAB63F05213</string>
-		</dict>
-		<key>A6B4DACB-9B95-474B-98A7-4FCBEA8843F9</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>A6B4DACB-9B95-474B-98A7-4FCBEA8843F9.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>alcalc project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>alcalc</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build alcalc</string>
-			<key>timeStartedRecording</key>
-			<real>672966984.55491996</real>
-			<key>timeStoppedRecording</key>
-			<real>672966986.95849097</real>
-			<key>title</key>
-			<string>Build alcalc</string>
-			<key>uniqueIdentifier</key>
-			<string>A6B4DACB-9B95-474B-98A7-4FCBEA8843F9</string>
-		</dict>
-		<key>B052D196-CF9B-4783-BD4E-59E199348525</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>B052D196-CF9B-4783-BD4E-59E199348525.xcactivitylog</string>
+			<string>11405244-9688-4C68-A1A2-2B22CD88E4C9.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -508,15 +32,15 @@
 			<key>signature</key>
 			<string>Build alcalc</string>
 			<key>timeStartedRecording</key>
-			<real>672965005.10253203</real>
+			<real>673744035.59765899</real>
 			<key>timeStoppedRecording</key>
-			<real>672965013.12216699</real>
+			<real>673744040.734519</real>
 			<key>title</key>
 			<string>Build alcalc</string>
 			<key>uniqueIdentifier</key>
-			<string>B052D196-CF9B-4783-BD4E-59E199348525</string>
+			<string>11405244-9688-4C68-A1A2-2B22CD88E4C9</string>
 		</dict>
-		<key>B9EC8C8D-F8A0-4789-B9EE-4A918502908B</key>
+		<key>189FAF85-5EDA-4A21-9439-384A15BFF456</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -525,13 +49,13 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>B9EC8C8D-F8A0-4789-B9EE-4A918502908B.xcactivitylog</string>
+			<string>189FAF85-5EDA-4A21-9439-384A15BFF456.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>S</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>alcalc project</string>
@@ -542,15 +66,15 @@
 			<key>signature</key>
 			<string>Build alcalc</string>
 			<key>timeStartedRecording</key>
-			<real>672966368.57088494</real>
+			<real>673744602.03379905</real>
 			<key>timeStoppedRecording</key>
-			<real>672966370.87501502</real>
+			<real>673744603.19125795</real>
 			<key>title</key>
 			<string>Build alcalc</string>
 			<key>uniqueIdentifier</key>
-			<string>B9EC8C8D-F8A0-4789-B9EE-4A918502908B</string>
+			<string>189FAF85-5EDA-4A21-9439-384A15BFF456</string>
 		</dict>
-		<key>BA0795FE-D1FA-45E3-A32F-755D84CEB95B</key>
+		<key>2A5788B2-5D66-45DE-896E-A9D1422D4AB2</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -559,13 +83,13 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>BA0795FE-D1FA-45E3-A32F-755D84CEB95B.xcactivitylog</string>
+			<string>2A5788B2-5D66-45DE-896E-A9D1422D4AB2.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>S</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>alcalc project</string>
@@ -576,13 +100,693 @@
 			<key>signature</key>
 			<string>Build alcalc</string>
 			<key>timeStartedRecording</key>
-			<real>672963804.64387202</real>
+			<real>673745637.18348801</real>
 			<key>timeStoppedRecording</key>
-			<real>672963808.85391402</real>
+			<real>673745638.13584495</real>
 			<key>title</key>
 			<string>Build alcalc</string>
 			<key>uniqueIdentifier</key>
-			<string>BA0795FE-D1FA-45E3-A32F-755D84CEB95B</string>
+			<string>2A5788B2-5D66-45DE-896E-A9D1422D4AB2</string>
+		</dict>
+		<key>67FB2FB3-052A-4204-93F2-1FAF655687CA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>67FB2FB3-052A-4204-93F2-1FAF655687CA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>673744418.718467</real>
+			<key>timeStoppedRecording</key>
+			<real>673744421.00319302</real>
+			<key>title</key>
+			<string>Build alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>67FB2FB3-052A-4204-93F2-1FAF655687CA</string>
+		</dict>
+		<key>700E179E-5B40-400C-9682-359005BBBA05</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>700E179E-5B40-400C-9682-359005BBBA05.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>673745653.66449201</real>
+			<key>timeStoppedRecording</key>
+			<real>673745653.78132606</real>
+			<key>title</key>
+			<string>Build alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>700E179E-5B40-400C-9682-359005BBBA05</string>
+		</dict>
+		<key>7EFD197B-4477-4F0A-9FDA-D720B61EB2B8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7EFD197B-4477-4F0A-9FDA-D720B61EB2B8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>673745913.79795301</real>
+			<key>timeStoppedRecording</key>
+			<real>673745914.97762895</real>
+			<key>title</key>
+			<string>Build alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>7EFD197B-4477-4F0A-9FDA-D720B61EB2B8</string>
+		</dict>
+		<key>81E5274E-2BB0-48CA-9650-E291004C8EB9</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>81E5274E-2BB0-48CA-9650-E291004C8EB9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>673744911.10267997</real>
+			<key>timeStoppedRecording</key>
+			<real>673744912.48200297</real>
+			<key>title</key>
+			<string>Build alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>81E5274E-2BB0-48CA-9650-E291004C8EB9</string>
+		</dict>
+		<key>8434BF78-75A5-4E9E-9CD0-E5D7A1932C88</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8434BF78-75A5-4E9E-9CD0-E5D7A1932C88.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>673742684.10521996</real>
+			<key>timeStoppedRecording</key>
+			<real>673742691.70288098</real>
+			<key>title</key>
+			<string>Build alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>8434BF78-75A5-4E9E-9CD0-E5D7A1932C88</string>
+		</dict>
+		<key>87AA53CA-B08B-42E0-AA7C-E1D8CC456D0C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>87AA53CA-B08B-42E0-AA7C-E1D8CC456D0C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>673745195.46773398</real>
+			<key>timeStoppedRecording</key>
+			<real>673745196.68968701</real>
+			<key>title</key>
+			<string>Build alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>87AA53CA-B08B-42E0-AA7C-E1D8CC456D0C</string>
+		</dict>
+		<key>89E32951-BC71-4645-A06B-F4EC283EC70D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>89E32951-BC71-4645-A06B-F4EC283EC70D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>673745297.32995105</real>
+			<key>timeStoppedRecording</key>
+			<real>673745298.54208398</real>
+			<key>title</key>
+			<string>Build alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>89E32951-BC71-4645-A06B-F4EC283EC70D</string>
+		</dict>
+		<key>8C12E78F-CF44-4CF6-BBA9-D2B477FA3809</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8C12E78F-CF44-4CF6-BBA9-D2B477FA3809.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>673745069.62565601</real>
+			<key>timeStoppedRecording</key>
+			<real>673745070.51710403</real>
+			<key>title</key>
+			<string>Build alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>8C12E78F-CF44-4CF6-BBA9-D2B477FA3809</string>
+		</dict>
+		<key>941B1610-2B95-4204-BF6B-34706DC9B2EC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>941B1610-2B95-4204-BF6B-34706DC9B2EC.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>673743867.16072404</real>
+			<key>timeStoppedRecording</key>
+			<real>673743868.42077601</real>
+			<key>title</key>
+			<string>Build alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>941B1610-2B95-4204-BF6B-34706DC9B2EC</string>
+		</dict>
+		<key>A025FD98-8644-4900-A27E-8B28536BE154</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A025FD98-8644-4900-A27E-8B28536BE154.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>673744838.785344</real>
+			<key>timeStoppedRecording</key>
+			<real>673744840.03052795</real>
+			<key>title</key>
+			<string>Build alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>A025FD98-8644-4900-A27E-8B28536BE154</string>
+		</dict>
+		<key>A351EC94-52CA-42F8-ABA1-767B53781CCE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A351EC94-52CA-42F8-ABA1-767B53781CCE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>673745801.57296801</real>
+			<key>timeStoppedRecording</key>
+			<real>673745801.60820401</real>
+			<key>title</key>
+			<string>Build alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>A351EC94-52CA-42F8-ABA1-767B53781CCE</string>
+		</dict>
+		<key>B680C74B-6774-4386-9938-547ABF36F061</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B680C74B-6774-4386-9938-547ABF36F061.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>673744327.65641797</real>
+			<key>timeStoppedRecording</key>
+			<real>673744329.65651906</real>
+			<key>title</key>
+			<string>Build alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>B680C74B-6774-4386-9938-547ABF36F061</string>
+		</dict>
+		<key>C3DA4FD1-4B7E-4B22-8B1B-2E073450E2EF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C3DA4FD1-4B7E-4B22-8B1B-2E073450E2EF.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>673745924.085675</real>
+			<key>timeStoppedRecording</key>
+			<real>673745924.12423098</real>
+			<key>title</key>
+			<string>Build alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>C3DA4FD1-4B7E-4B22-8B1B-2E073450E2EF</string>
+		</dict>
+		<key>CA28392F-CD82-42BB-9844-1FCD388AA46A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>CA28392F-CD82-42BB-9844-1FCD388AA46A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>673745790.39104104</real>
+			<key>timeStoppedRecording</key>
+			<real>673745791.28747106</real>
+			<key>title</key>
+			<string>Build alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>CA28392F-CD82-42BB-9844-1FCD388AA46A</string>
+		</dict>
+		<key>D092E1C8-90A7-4BD4-9501-F290CBEA04A2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D092E1C8-90A7-4BD4-9501-F290CBEA04A2.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>673745738.93627405</real>
+			<key>timeStoppedRecording</key>
+			<real>673745740.11582804</real>
+			<key>title</key>
+			<string>Build alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>D092E1C8-90A7-4BD4-9501-F290CBEA04A2</string>
+		</dict>
+		<key>D0EB9744-573F-4880-A052-2CDC2D52EDFD</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D0EB9744-573F-4880-A052-2CDC2D52EDFD.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>673743702.25709701</real>
+			<key>timeStoppedRecording</key>
+			<real>673743703.52091396</real>
+			<key>title</key>
+			<string>Build alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>D0EB9744-573F-4880-A052-2CDC2D52EDFD</string>
+		</dict>
+		<key>DE405436-E283-480A-A6C3-0A4A01350504</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DE405436-E283-480A-A6C3-0A4A01350504.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>673744749.24198902</real>
+			<key>timeStoppedRecording</key>
+			<real>673744750.51025701</real>
+			<key>title</key>
+			<string>Build alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>DE405436-E283-480A-A6C3-0A4A01350504</string>
+		</dict>
+		<key>E861AEA6-0882-4208-88C1-83E24F4AACD4</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E861AEA6-0882-4208-88C1-83E24F4AACD4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>673746130.31779504</real>
+			<key>timeStoppedRecording</key>
+			<real>673746131.24238396</real>
+			<key>title</key>
+			<string>Build alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>E861AEA6-0882-4208-88C1-83E24F4AACD4</string>
+		</dict>
+		<key>ED831263-DDF6-4B17-BC6B-B67B56C296BE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>ED831263-DDF6-4B17-BC6B-B67B56C296BE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>673743345.05433095</real>
+			<key>timeStoppedRecording</key>
+			<real>673743351.70371103</real>
+			<key>title</key>
+			<string>Build alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>ED831263-DDF6-4B17-BC6B-B67B56C296BE</string>
+		</dict>
+		<key>FC013684-30F2-4F41-8CE1-22D3953347E4</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FC013684-30F2-4F41-8CE1-22D3953347E4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>673745507.26972401</real>
+			<key>timeStoppedRecording</key>
+			<real>673745508.22283006</real>
+			<key>title</key>
+			<string>Build alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>FC013684-30F2-4F41-8CE1-22D3953347E4</string>
 		</dict>
 	</dict>
 </dict>

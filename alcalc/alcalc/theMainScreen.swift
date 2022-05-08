@@ -35,7 +35,7 @@ struct theMainScreen: View {
                             .frame(width: 40, height: 40)
                             .background(Color.yellow)
                             .cornerRadius(15)
-                            .padding()
+                            .padding(.leading, 100.0)
                     }
                     .padding(.leading)
                     .sheet(isPresented: $pressP)
@@ -50,14 +50,18 @@ struct theMainScreen: View {
         }.frame(maxHeight: .infinity, alignment: .bottom)
         HStack{
             HStack{
-                NavigationLink("Menu", destination: Menu(name: "", alcohol: "", volume: "", allVol: $allVol, allAlc: $allAlc, promille: $promille))
-            }
+                NavigationLink("Menu", destination: Menu(name: "", alcohol: "", volume: "", allVol: $allVol, allAlc: $allAlc, promille: $promille)).frame( alignment: .leading).padding()
+            }.foregroundColor(.white)
+                .frame(width: 100, height: 100)
+                .background(Color.green)
+                .cornerRadius(15)
+                .padding()
             Button (action:
                     {
                         self.pressS.toggle()
                     })
                     {
-                        Text("Shop").foregroundColor(.white)
+                        Text("Drunk List").foregroundColor(.white)
                             .frame(width: 100, height: 100)
                             .background(Color.red)
                             .cornerRadius(15)
@@ -66,10 +70,10 @@ struct theMainScreen: View {
                     .padding(.leading)
                     .sheet(isPresented: $pressS)
                         {
-                            Shop()
+                            ListOfDrinked()
                             
-                        }.frame(alignment: .trailing).padding()
-    }.frame(maxHeight: .infinity, alignment: .bottom)
+                        }.frame(alignment: .trailing).padding(.leading, 20.0)
+        }.frame(maxHeight: .infinity, alignment: .bottom).padding(.horizontal, 50.0)
     }
 }
 

@@ -43,8 +43,9 @@ struct ContentView: View {
                     //ввод веса
                     
                     DatePicker("Birthdate", selection: $birthday, in: ...Date(), displayedComponents: .date)
-                    let time = toDate.timeIntervalSince(self.birthday)
-                    let age = Int(time/(60*60*24*365))
+                   
+                    let timeRange = Calendar.current.dateComponents([.year, .month, .day], from: birthday, to: Date())
+                    let age = Int(timeRange.year ?? 0)
                     Button(action: {
                         weightGlobal = weight
                         if selectedGender == 0{

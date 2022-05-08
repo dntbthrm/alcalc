@@ -8,23 +8,27 @@
       },
       {
         "comment": "",
-        "key": "Name"
-      },
-      {
-        "comment": "",
-        "key": "Alcohol"
-      },
-      {
-        "comment": "",
-        "key": "Volume"
-      },
-      {
-        "comment": "",
         "key": "X"
       },
       {
         "comment": "",
+        "key": "Name"
+      },
+      {
+        "comment": "",
+        "key": "%"
+      },
+      {
+        "comment": "",
+        "key": "ml"
+      },
+      {
+        "comment": "",
         "key": "Add"
+      },
+      {
+        "comment": "",
+        "key": "%@"
       },
       {
         "comment": "",

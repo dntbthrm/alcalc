@@ -41,8 +41,6 @@ struct Menu: View {
     var body: some View {
         
         ZStack{
-            
-            
             VStack{
                 
                 ScrollView{
@@ -67,7 +65,7 @@ struct Menu: View {
                 
                 Button(action: {self.showAdd = true}){
                     Text("Add Drink").foregroundColor(Color.white)
-                }.frame(width: 200, height: 50, alignment: .trailing)
+                }.frame(width: 200, height: 50, alignment: .center)
                  .background(Color.blue)
                  .cornerRadius(20)
                  .disabled(showDrink)

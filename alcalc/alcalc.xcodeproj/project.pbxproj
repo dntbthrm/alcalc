@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		414438162828859300905AEA /* ListOfDrinked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414438152828859300905AEA /* ListOfDrinked.swift */; };
 		418B730E28154B44007E8292 /* theMainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B730D28154B44007E8292 /* theMainScreen.swift */; };
-		418B731528155E33007E8292 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B731428155E33007E8292 /* Shop.swift */; };
 		41F08D16281332EA00003AD1 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F08D15281332EA00003AD1 /* Menu.swift */; };
 		7CA16407281BE9660034FCF2 /* settingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA16406281BE9660034FCF2 /* settingsScreen.swift */; };
 		7CC9FBBA280F3E3000FC6E19 /* alcalcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC9FBB9280F3E3000FC6E19 /* alcalcApp.swift */; };
@@ -19,9 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		414438152828859300905AEA /* ListOfDrinked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfDrinked.swift; sourceTree = "<group>"; };
 		418B730D28154B44007E8292 /* theMainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theMainScreen.swift; sourceTree = "<group>"; };
 		418B7313281557BA007E8292 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
-		418B731428155E33007E8292 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		41F08D15281332EA00003AD1 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		7CA16406281BE9660034FCF2 /* settingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsScreen.swift; sourceTree = "<group>"; };
 		7CC9FBB6280F3E3000FC6E19 /* alcalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alcalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,8 +65,8 @@
 				7CC9FBB9280F3E3000FC6E19 /* alcalcApp.swift */,
 				7CC9FBBB280F3E3000FC6E19 /* ContentView.swift */,
 				418B730D28154B44007E8292 /* theMainScreen.swift */,
+				414438152828859300905AEA /* ListOfDrinked.swift */,
 				7CA16406281BE9660034FCF2 /* settingsScreen.swift */,
-				418B731428155E33007E8292 /* Shop.swift */,
 				9E48B3AD2826A93C0081451F /* Progress_Screen.swift */,
 				41F08D15281332EA00003AD1 /* Menu.swift */,
 				418B7313281557BA007E8292 /* cat.png */,
@@ -157,9 +157,9 @@
 				41F08D16281332EA00003AD1 /* Menu.swift in Sources */,
 				7CC9FBBC280F3E3000FC6E19 /* ContentView.swift in Sources */,
 				7CA16407281BE9660034FCF2 /* settingsScreen.swift in Sources */,
+				414438162828859300905AEA /* ListOfDrinked.swift in Sources */,
 				9E48B3AE2826A93C0081451F /* Progress_Screen.swift in Sources */,
 				7CC9FBBA280F3E3000FC6E19 /* alcalcApp.swift in Sources */,
-				418B731528155E33007E8292 /* Shop.swift in Sources */,
 				418B730E28154B44007E8292 /* theMainScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
