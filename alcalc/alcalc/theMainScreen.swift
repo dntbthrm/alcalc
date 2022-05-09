@@ -50,7 +50,7 @@ struct theMainScreen: View {
         }.frame(maxHeight: .infinity, alignment: .bottom)
         HStack{
             HStack{
-                NavigationLink("Menu", destination: Menu(name: "", alcohol: "", volume: "", allVol: $allVol, allAlc: $allAlc, promille: $promille)).frame( alignment: .leading).padding()
+                NavigationLink("Menu", destination: Menu(name: "", alcohol: "", volume: "", selColor: Color.white, allVol: $allVol, allAlc: $allAlc, promille: $promille)).frame( alignment: .leading).padding()
             }.foregroundColor(.white)
                 .frame(width: 100, height: 100)
                 .background(Color.green)
