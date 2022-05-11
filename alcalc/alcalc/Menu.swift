@@ -46,6 +46,7 @@ var drinksArray = [
 struct Menu: View {
     @State var showAdd = false
     @State var showDrink = false
+    @State var showDelete = false
     @State var name: String
     @State var alcohol: String
     @State var volume: String
@@ -86,10 +87,13 @@ struct Menu: View {
                                     alcohol = "\(drinksArray[item].alcohol)"
                                     ind = item
                                     showDrink = true }
-                                .disabled(showAdd)
-                        }
-                    }
+                                .onLongPressGesture{
+                                    if(item > 5){
+                                    ind = item
+                                    showDelete = true} }
+                    }.disabled(showAdd || showDrink)
                 }.padding()
+                }
                 
                 Button(action: {self.showAdd = true}){
                     Text("Add Drink").foregroundColor(Color.white)
@@ -218,6 +222,40 @@ struct Menu: View {
                             
                         }
                     }.padding()
+                }.frame(width: 300, height: 200)
+                    .cornerRadius(20).shadow(radius: 20)
+            }
+            
+            if(showDelete){
+                ZStack{
+                    Color.white
+                    VStack{
+                        Button(action: {
+                            name = ""
+                            alcohol = ""
+                            volume = ""
+                            self.showDelete = false
+                        }, label:{
+                            Text("X")
+                        }).position(x: 250, y: 15)
+                            .colorMultiply(Color.orange)
+                        
+                        Spacer()
+                        
+                        Text("Want to delete?")
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            drinksArray.remove(at: ind)
+                            self.showDelete = false
+                        }, label:{
+                            Text("Delete")
+                        }).colorMultiply(Color.red)
+                        
+                        
+                    }.padding()
+                    
                 }.frame(width: 300, height: 200)
                     .cornerRadius(20).shadow(radius: 20)
             }

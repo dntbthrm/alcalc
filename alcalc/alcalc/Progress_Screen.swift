@@ -7,21 +7,6 @@
 
 import SwiftUI
 
-
-let VodkaTarget: Double = 1000.0
-var circleProgress: Double = 0.0
-
-struct Task: Hashable {
-    var id = UUID()
-    let name: String;
-    let task: String;
-    let progress: Double
-}
-
-var tasks = [
-    Task(name: "Tereza Mouther", task: "Drink 3 bottles of wine", progress: 0)
-]
-
 struct Progress_Screen: View {
     var body: some View {
         ZStack{
