@@ -14,28 +14,44 @@ struct Drink: Hashable{
     let alcohol: String
     let volume: String
     let target: Double
+    var progress: Double
+    let taskName: String
+    let task: String
     let color: Color
 }
 
 var drinksArray = [
-    Drink(name:"Vodka", alcohol: "\(40)", volume:"", target: 0, color: Color.yellow),
-    Drink(name:"Wine", alcohol:"\(8)", volume:"", target: 0, color: Color.yellow),
-    Drink(name:"Bear", alcohol:"\(4)", volume:"", target: 0, color: Color.yellow),
-    Drink(name:"Rom", alcohol:"\(40)", volume:"", target: 0, color: Color.yellow),
-    Drink(name:"Rom", alcohol:"\(40)", volume:"", target: 0, color: Color.yellow),
-    Drink(name:"Rom", alcohol:"\(40)", volume:"", target: 0, color: Color.yellow)
+    Drink(name:"Vodka", alcohol: "\(40)", volume:"",
+          target: 0, progress: 0,taskName: "", task: "",
+          color: Color.yellow),
+    Drink(name:"Wine", alcohol:"\(8)", volume:"",
+          target: 2250, progress: 0,taskName: "Tereza Mouther", task: "Drink 3 bottles of wine",
+          color: Color.yellow),
+    Drink(name:"Bear", alcohol:"\(4)", volume:"",
+          target: 0, progress: 0,taskName: "", task: "",
+          color: Color.yellow),
+    Drink(name:"Jagermeister", alcohol:"\(35)", volume:"",
+          target: 700, progress: 0,taskName: "Naked warden", task: "Drink 0,7 of Jagermeister",
+          color: Color.yellow),
+    Drink(name:"Moonshine", alcohol:"\(45)", volume:"",
+          target: 1000, progress: 0,taskName: "Last way", task: "Drink liter of Moonshine",
+          color: Color.yellow),
+    Drink(name:"Rom", alcohol:"\(40)", volume:"",
+          target: 1000, progress: 0,taskName: "Pirates King", task: "Drink liter of Rom",
+          color: Color.yellow)
     
 ]
 
 
 struct Menu: View {
-    @State var showAdd = false;
-    @State var showDrink = false;
+    @State var showAdd = false
+    @State var showDrink = false
     @State var name: String
     @State var alcohol: String
     @State var volume: String
     @State var selColor: Color
     @Binding var allVol: Int
+    @State var ind: Int = 0
     @Binding var allAlc: Float
     @Binding var promille: Float
     
@@ -57,17 +73,18 @@ struct Menu: View {
                 
                 ScrollView{
                     LazyVGrid(columns: columns, spacing: 20){
-                        ForEach(drinksArray, id: \.self){ item in
+                        ForEach(drinksArray.indices, id: \.self){ item in
                             VStack(alignment: .leading, spacing: 10){
-                                Text(item.name).bold()
-                                Text("Alcohol: " + item.alcohol + "%")
+                                Text(drinksArray[item].name).bold()
+                                Text("Alcohol: " + drinksArray[item].alcohol + "%")
                             }.frame(width: 175, height: 175)
-                                .background(item.color)
+                                .background(drinksArray[item].color)
                                 .cornerRadius(30)
                                 .foregroundColor(Color.white)
                                 .onTapGesture{
-                                    name = "\(item.name)"
-                                    alcohol = "\(item.alcohol)"
+                                    name = "\(drinksArray[item].name)"
+                                    alcohol = "\(drinksArray[item].alcohol)"
+                                    ind = item
                                     showDrink = true }
                                 .disabled(showAdd)
                         }
@@ -134,7 +151,7 @@ struct Menu: View {
                         
                         Button(
                             action: {
-                                drinksArray.append(Drink(name: name, alcohol: alcohol, volume: volume, target: 0, color: selColor))
+                                drinksArray.append(Drink(name: name, alcohol: alcohol, volume: volume,target: 0, progress: 0, taskName:"", task: "", color: selColor))
                                 name = ""
                                 alcohol = ""
                                 volume = ""
@@ -184,17 +201,15 @@ struct Menu: View {
                             }
                             Spacer()
                             Button(action: {
+                                drinksArray[ind].progress += (Double(volume) ?? 0)/drinksArray[ind].target
                                 DrinkedList.append(Drinked(name: name, alcohol: alcohol, volume: volume))
                                 allVol = Int(volume) ?? 0
                                 allAlc = (Float(alcohol) ?? 0)*0.01
                                 promille += Float(allVol)*allAlc*0.8/(koeff*(Float(weightGlobal) ?? 0))
-                                if(name == "Vodka"){
-                                    circleProgress += (Double(volume) ?? 0)/VodkaTarget
-                                }
+                                
                                 
                                 name = ""
                                 alcohol = ""
-                                volume = ""
                                 self.showDrink = false
                             }, label:{
                                 Text("Drink")
