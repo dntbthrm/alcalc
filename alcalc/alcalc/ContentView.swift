@@ -25,69 +25,106 @@ struct ContentView: View {
         
         
         NavigationView{
-            
-            Form{  //открытие формы
-                Section{//открытие группы формы
-                    Picker(
-                        selection: $selectedGender,
-                        label: Text("Select Gender"))
-                    {
-                        ForEach(0 ..< 2) {
-                            Text(self.gender[$0])
+            ZStack{
+                darkGray.ignoresSafeArea()
+                VStack{
+                    VStack(spacing: 40){
+                        VStack{
+                            Picker(
+                                selection: $selectedGender,
+                                label: Text("Select Gender"))
+                            {
+                                ForEach(0 ..< 2) {
+                                    Text(self.gender[$0])
+                                }
+                            }.pickerStyle(SegmentedPickerStyle()).colorMultiply(gray)
+                        }.frame(width: 300, height: 25, alignment: .center).padding(20).background(.white).cornerRadius(10).opacity(0.8)
+                        
+                        VStack{
+                            TextField("Weight",text: $weight)
+                                .keyboardType(.numberPad)
+                                .padding(.leading)
+                                .colorMultiply(.black)
+                        }.frame(width: 340, height: 60, alignment: .center).background(.white).cornerRadius(10).opacity(0.8)
+                        
+                        VStack{
+                            DatePicker(selection: $birthday, in: ...Date(), displayedComponents: .date){
+                                Text("Birthdate")
+                                    .padding(.leading)
+                            }.padding()
+                        }.frame(width: 340, height: 60, alignment: .center).background(.white).cornerRadius(10).opacity(0.8)
+                        
+                        let timeRange = Calendar.current.dateComponents([.year, .month, .day], from: birthday, to: Date())
+                        let age = Int(timeRange.year ?? 0)
+                        
+                        VStack{
+                            Button(action: {
+                                weightGlobal = weight
+                                if selectedGender == 0{
+                                    koeff = 0.7
+                                }
+                                else{
+                                    koeff = 0.6
+                                }
+                                if age < 18{
+                                    self.alertCont = true
+                                }
+                                self.good = true
+                            }){
+                                Text("Confirm")
+                                    .fontWeight(.bold)
+                                    .frame(width: 232, height: 69, alignment: .center)
+                                    .disabled(weight.isEmpty)
+                                    .opacity((weight.isEmpty) ? 0.9 : 1)
+                                    .foregroundColor((weight.isEmpty) ? Color.black : Color.white)
+                                    .background((weight.isEmpty) ? Color.gray : yellow)
+                                    .cornerRadius(10)
+                            }.opacity((weight.isEmpty) ? 0.2 : 1)
+                                .alert(isPresented: $alertCont) {
+                                    Alert(title: Text("Message"), message: Text("You're too young"), dismissButton: .destructive(Text("OK"), action: {
+                                        self.good = false
+                                    }))
+                                }
                         }
-                    }.pickerStyle(SegmentedPickerStyle()) //выбор пола
+                    }
+                    .frame(width: 376, height: 419, alignment: .center)
+                    .background(gray)
+                    .cornerRadius(10)
+                    VStack(spacing: 20){
+                        VStack {
+                            NavigationLink(destination: theMainScreen()){
+                                Text("Start Party")
+                                    .font(.largeTitle)
+                                    .fontWeight(.bold)
+                                    .frame(width: 376, height: 82, alignment: .center)
+                                    .background(yellow)
+                                    .cornerRadius(10)
+                                    .foregroundColor(.white)
+                            }.disabled(good == false)
+                        }
+                        VStack{
+                            NavigationLink(destination: settingsScreen()){
+                                Text("Settings")
+                                    .font(.largeTitle)
+                                    .fontWeight(.bold)
+                                    .frame(width: 376, height: 82, alignment: .center)
+                                    .background(orange)
+                                    .cornerRadius(10)
+                                    .foregroundColor(.white)
+                            }
+                        }.foregroundColor(.purple).frame(width: 350, alignment: .top)
+                    }.frame(height: 250, alignment: .bottom)
                     
-                    
-                    TextField("Weight",text: $weight)
-                        .keyboardType(/*@START_MENU_TOKEN@*/.numberPad/*@END_MENU_TOKEN@*/)
-                    //ввод веса
-                    
-                    DatePicker("Birthdate", selection: $birthday, in: ...Date(), displayedComponents: .date)
-                   
-                    let timeRange = Calendar.current.dateComponents([.year, .month, .day], from: birthday, to: Date())
-                    let age = Int(timeRange.year ?? 0)
-                    Button(action: {
-                        weightGlobal = weight
-                        if selectedGender == 0{
-                            koeff = 0.7
-                        }
-                        else{
-                            koeff = 0.6
-                        }
-                        if age < 18{
-                            self.alertCont = true
-                        }
-                        self.good = true
-                    }, label:
-                    {
-                        Text("Confirm")
-                    }).colorMultiply(Color.green).disabled(weight.isEmpty)
-                        .alert(isPresented: $alertCont) {
-                            Alert(title: Text("Message"), message: Text("You're too young"), dismissButton: .destructive(Text("OK"), action: {
-                                self.good = false
-                            }))
-                        }
-//выбор даты рождения
+                    VStack{
+                        Text("Version 1.0\n Popov edition").fontWeight(.ultraLight).multilineTextAlignment(.center)
+                    }.padding(.top).frame(width: 300 ,height: 90, alignment: .bottom)
                 }
-                .padding()
+                .frame(width: 350, height: 800, alignment: .top)
                 
-                Section{
-                    VStack {
-                        NavigationLink("Start Party!!!", destination: theMainScreen()).disabled(good == false)
-                    }.foregroundColor(.purple).padding()
-                    VStack{ NavigationLink("Settings",destination: settingsScreen())
-                    }.foregroundColor(.purple).padding()
-                }
-                Section{
-                    Text("Version 0.1")
-                        .fontWeight(.ultraLight)
-                        .padding(.leading,120)
-                }
             }
         }
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
