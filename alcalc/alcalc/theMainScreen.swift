@@ -26,64 +26,70 @@ struct theMainScreen: View {
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
     var body: some View {
-        
-        HStack{
-        Text("\(String(format: "%.2f",promille))"+"‰").onReceive(timer) { _ in
-                if timeRemaining > 0 && promille > 0{
-                            timeRemaining -= 1
-                            promille -= 1/84600
-                }
+            ZStack{
+                darkGray.ignoresSafeArea()
+            VStack{
+            HStack{
+            Text("\(String(format: "%.2f",promille))"+"‰").onReceive(timer) { _ in
+                    if timeRemaining > 0 && promille > 0{
+                                timeRemaining -= 1
+                                promille -= 1/84600
+                    }
             }
 
-            Button (action:
-                    {
-                        self.pressP.toggle()
-                    })
-                    {
-                        Text("A").foregroundColor(.black)
-                            .frame(width: 40, height: 40)
-                            .background(Color.yellow)
-                            .cornerRadius(15)
-                            .padding(.leading, 100.0)
-                    }
-                    .padding(.leading)
-                    .sheet(isPresented: $pressP)
+                Button (action:
                         {
-                            Progress_Screen()
-                            
-                        }.frame(alignment: .trailing).padding()
-        
-        }.frame( maxHeight: .infinity, alignment: .topLeading)
-        HStack{
-            Image("cat").resizable().frame(width: 200, height: 300, alignment: .center)
-        }.frame(maxHeight: .infinity, alignment: .bottom)
-        HStack{
+                            self.pressP.toggle()
+                        })
+                        {
+                            Text("A").foregroundColor(.black)
+                                .frame(width: 40, height: 40)
+                                .background(Color.yellow)
+                                .cornerRadius(15)
+                                .padding(.leading, 100.0)
+                        }
+                        .padding(.leading)
+                        .sheet(isPresented: $pressP)
+                            {
+                                Progress_Screen()
+                                
+                            }.frame(alignment: .trailing).padding()
+            
+            }.frame(width: 500,height: 100,alignment: .center).background(gray)
             HStack{
-                NavigationLink("Menu", destination: Menu(name: "", alcohol: "", volume: "", selColor: Color.white, allVol: $allVol, allAlc: $allAlc, promille: $promille)).frame( alignment: .leading).padding()
-            }.foregroundColor(.white)
-                .frame(width: 100, height: 100)
-                .background(Color.green)
-                .cornerRadius(15)
-                .padding()
-            Button (action:
-                    {
-                        self.pressS.toggle()
-                    })
-                    {
-                        Text("Drunk List").foregroundColor(.white)
-                            .frame(width: 100, height: 100)
-                            .background(Color.red)
-                            .cornerRadius(15)
-                            .padding()
-                    }
-                    .padding(.leading)
-                    .sheet(isPresented: $pressS)
+                Image("cat").resizable().frame(width: 200, height: 300, alignment: .center)
+            }.frame(maxHeight: .infinity, alignment: .bottom)
+            HStack{
+                
+                NavigationLink(destination: Menu(name: "", alcohol: "", volume: "", selColor: Color.white, allVol: $allVol, allAlc: $allAlc, promille: $promille)){
+                        Text("Menu")
+                                    .frame( alignment: .leading).foregroundColor(.white)
+                                    .frame(width: 162, height: 122)
+                                    .background(Color.yellow)
+                                    .cornerRadius(10)
+                                    
+                }.padding()
+                Button (action:
                         {
-                            ListOfDrinked()
-                            
-                        }.frame(alignment: .trailing).padding(.leading, 20.0)
-        }.frame(maxHeight: .infinity, alignment: .bottom).padding(.horizontal, 50.0)
-    }
+                            self.pressS.toggle()
+                        })
+                        {
+                            Text("Drunk List").foregroundColor(.white)
+                                .frame(width: 162, height: 122)
+                                .background(Color.orange)
+                                .cornerRadius(10)
+                                .padding()
+                        }
+                        .padding(.leading)
+                        .sheet(isPresented: $pressS)
+                            {
+                                ListOfDrinked()
+                                
+                            }.frame(alignment: .trailing).padding(.leading, 20.0)
+            }.frame(maxHeight: .infinity, alignment: .bottom).padding(.horizontal, 50.0)
+        }
+            }.navigationBarHidden(true)
+        }
 }
 
 struct theMainScreen_Previews: PreviewProvider {

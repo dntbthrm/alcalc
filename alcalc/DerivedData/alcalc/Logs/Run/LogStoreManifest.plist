@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>B39320BB-8950-4974-ACC8-19EBEAD3739A</key>
+		<key>2068947A-B0A6-4117-8D03-A70083DC521A</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>B39320BB-8950-4974-ACC8-19EBEAD3739A.xcactivitylog</string>
+			<string>2068947A-B0A6-4117-8D03-A70083DC521A.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,15 +32,15 @@
 			<key>signature</key>
 			<string>Run alcalc</string>
 			<key>timeStartedRecording</key>
-			<real>674063203.52285802</real>
+			<real>674082966.13496196</real>
 			<key>timeStoppedRecording</key>
-			<real>674063269.44148505</real>
+			<real>674083001.06283295</real>
 			<key>title</key>
 			<string>Run alcalc</string>
 			<key>uniqueIdentifier</key>
-			<string>B39320BB-8950-4974-ACC8-19EBEAD3739A</string>
+			<string>2068947A-B0A6-4117-8D03-A70083DC521A</string>
 		</dict>
-		<key>F2B7A881-AFFC-48B4-A810-5C4188029A92</key>
+		<key>A859CC1E-2546-4E5E-96E1-2D16783263CC</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -49,7 +49,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>F2B7A881-AFFC-48B4-A810-5C4188029A92.xcactivitylog</string>
+			<string>A859CC1E-2546-4E5E-96E1-2D16783263CC.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -66,13 +66,47 @@
 			<key>signature</key>
 			<string>Run alcalc</string>
 			<key>timeStartedRecording</key>
-			<real>674063282.04656196</real>
+			<real>674082942.36211801</real>
 			<key>timeStoppedRecording</key>
-			<real>674063319.74227703</real>
+			<real>674082963.77178001</real>
 			<key>title</key>
 			<string>Run alcalc</string>
 			<key>uniqueIdentifier</key>
-			<string>F2B7A881-AFFC-48B4-A810-5C4188029A92</string>
+			<string>A859CC1E-2546-4E5E-96E1-2D16783263CC</string>
+		</dict>
+		<key>AA46775F-BD5F-4BC8-87B3-E2B810C83333</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>AA46775F-BD5F-4BC8-87B3-E2B810C83333.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>alcalc project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>alcalc</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run alcalc</string>
+			<key>timeStartedRecording</key>
+			<real>674083065.04799402</real>
+			<key>timeStoppedRecording</key>
+			<real>674083107.13820505</real>
+			<key>title</key>
+			<string>Run alcalc</string>
+			<key>uniqueIdentifier</key>
+			<string>AA46775F-BD5F-4BC8-87B3-E2B810C83333</string>
 		</dict>
 	</dict>
 </dict>
