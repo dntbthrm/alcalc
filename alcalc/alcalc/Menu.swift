@@ -42,6 +42,12 @@ var drinksArray = [
     
 ]
 
+let orange = Color(red: 207 / 255, green: 119 / 255, blue: 37 / 255)
+let darkGray = Color(red: 91 / 255, green: 93 / 255, blue: 82 / 255)
+let gray = Color(red: 171 / 255, green: 172 / 255, blue: 167 / 255)
+let yellow = Color(red: 240 / 255, green: 186 / 255, blue: 52 / 255)
+
+
 
 struct Menu: View {
     @State var showAdd = false
@@ -89,55 +95,60 @@ struct Menu: View {
                                     showDrink = true }
                                 .onLongPressGesture{
                                     if(item > 5){
-                                    ind = item
-                                    showDelete = true} }
-                    }.disabled(showAdd || showDrink)
-                }.padding()
+                                        ind = item
+                                        showDelete = true} }
+                        }.disabled(showAdd || showDrink)
+                    }.padding()
                 }
                 
-                Button(action: {self.showAdd = true}){
-                    Text("Add Drink").foregroundColor(Color.white)
-                }.frame(width: 200, height: 50, alignment: .center)
-                    .background(Color.blue)
-                    .cornerRadius(20)
-                    .disabled(showDrink)
+                Button(action:{
+                    self.showAdd = true
+                }){
+                    Text("Add Drink")
+                        .frame(width: 376, height: 82, alignment: .center)
+                        .foregroundColor(Color.white)
+                        .background(orange)
+                        .cornerRadius(10)
+                        .disabled(showDrink)
+                }
                 
             }
             
             if(showAdd){
                 ZStack {
-                    Color.white
                     
-                    VStack {
                         
-                        VStack(spacing: 30){
-                            Button(action: {
+                        VStack(spacing: 10){
+                            VStack{
+                            
+                            
+                            
+                            Button(action:{
                                 name = ""
                                 alcohol = ""
                                 volume = ""
                                 self.showAdd = false
-                            }, label:{
-                                Text("X")
-                            }).position(x: 250, y: 15)
-                                .colorMultiply(Color.blue)
+                            }){
+                                Text("X").frame(width: 41, height: 41, alignment: .center).background(gray).cornerRadius(10).foregroundColor(Color.white)
+                            }
+                            }.frame(width: 300,height: 41, alignment: .topTrailing).padding()
                             
                             
-                            VStack(spacing: 7){
-                                TextField("Name", text: $name).padding().overlay(
+                            VStack(alignment: .center, spacing: 10){
+                                TextField("Name", text: $name).padding().frame(width: 265, height: 58).overlay(
                                     RoundedRectangle(cornerRadius: 10.0)
-                                        .stroke(Color.gray, lineWidth: 1.0))
-                                TextField("%", text: $alcohol).padding().overlay(
+                                        .stroke(Color.gray, lineWidth: 1.0)).background(gray).cornerRadius(10)
+                                TextField("%", text: $alcohol).padding().frame(width: 265, height: 58).overlay(
                                     RoundedRectangle(cornerRadius: 10.0)
-                                        .stroke(Color.gray, lineWidth: 1.0))
-                                TextField("ml", text: $volume).padding().overlay(
+                                        .stroke(Color.gray, lineWidth: 1.0)).background(gray).cornerRadius(10)
+                                TextField("ml", text: $volume).padding().frame(width: 265, height: 58).overlay(
                                     RoundedRectangle(cornerRadius: 10.0)
-                                        .stroke(Color.gray, lineWidth: 1.0)
-                                )
+                                        .stroke(Color.gray, lineWidth: 1.0)).background(gray).cornerRadius(10)
                                 ScrollView(.horizontal){
                                     HStack{
                                         ForEach(colors, id: \.self){ color in
                                             Circle().foregroundColor(color)
-                                                .frame(width: 45, height: 45)
+                                                .frame(width: 58, height: 58)
                                                 .opacity(color == selColor ? 0.5 : 1.0)
                                                 .scaleEffect(color == selColor ? 1.1 : 1.0)
                                                 .onTapGesture{
@@ -145,38 +156,37 @@ struct Menu: View {
                                                 }
                                         }
                                     }.padding()
-                                }.overlay(
-                                    RoundedRectangle(cornerRadius: 10.0)
+                                }.frame(width: 265, height: 90).overlay(
+                                    RoundedRectangle(cornerRadius: 10)
                                         .stroke(Color.gray, lineWidth: 1.0)
-                                )
-                            }
-                        
-
-                        
-                        Button(
-                            action: {
-                                drinksArray.append(Drink(name: name, alcohol: alcohol, volume: volume,target: 0, progress: 0, taskName:"", task: "", color: selColor))
-                                name = ""
-                                alcohol = ""
-                                volume = ""
-                                selColor = Color.white
-                                self.showAdd = false
-                            },
-                            label: {
-                                Text("Add")
-                            }
+                                ).background(gray).cornerRadius(10)
+                            }.frame(height: 304 ,alignment: .center)
                             
-                        ).disabled((name.isEmpty || alcohol.isEmpty || volume.isEmpty) || (selColor == Color.white))
-                            .foregroundColor(Color.white)
-                            .frame(width: 100, height: 30, alignment: .center)
-                            .background((name.isEmpty || alcohol.isEmpty || volume.isEmpty) || (selColor == Color.white) ? Color.gray : Color.blue)
-                            .cornerRadius(20)
-                        }
+                            
+                            VStack{
+                            Button(
+                                action: {
+                                    drinksArray.append(Drink(name: name, alcohol: alcohol, volume: volume,target: 0, progress: 0, taskName:"", task: "", color: selColor))
+                                    name = ""
+                                    alcohol = ""
+                                    volume = ""
+                                    selColor = Color.white
+                                    self.showAdd = false
+                                }){
+                                
+                                    Text("Add").foregroundColor(Color.white)
+                                        .frame(width: 232, height: 69, alignment: .center)
+                                        .background((name.isEmpty || alcohol.isEmpty || volume.isEmpty) || (selColor == Color.white) ? Color.gray : yellow)
+                                        .cornerRadius(20)
+                                }.disabled((name.isEmpty || alcohol.isEmpty || volume.isEmpty) || (selColor == Color.white))
+                                
+                                
+                            }.padding().frame(height: 90, alignment: .bottom)
+                        }.frame(width: 320, height: 493, alignment: .top)
                         
-                    }.padding()
                     
-                }.frame(width: 300, height:400)
-                    .cornerRadius(20).shadow(radius: 20)
+                }.frame(width: 320, height:493).background(darkGray)
+                    .cornerRadius(20).shadow(radius: 20).padding()
             }
             
             
@@ -230,6 +240,7 @@ struct Menu: View {
                 ZStack{
                     Color.white
                     VStack{
+                        
                         Button(action: {
                             name = ""
                             alcohol = ""
