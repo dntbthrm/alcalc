@@ -33,6 +33,14 @@
       {
         "comment": "",
         "key": "Drink"
+      },
+      {
+        "comment": "",
+        "key": "Want to delete?"
+      },
+      {
+        "comment": "",
+        "key": "Delete"
       }
     ]
   },

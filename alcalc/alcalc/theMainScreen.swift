@@ -22,10 +22,19 @@ struct theMainScreen: View {
     @State private var allVol: Int = 0
     @State private var allAlc: Float = 0
     @State private var promille: Float = 0
+    @State var timeRemaining = 84600
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+
     var body: some View {
         
         HStack{
-            Text("\(String(format: "%.2f", promille))"+"‰")
+        Text("\(String(format: "%.2f",promille))"+"‰").onReceive(timer) { _ in
+                if timeRemaining > 0 && promille > 0{
+                            timeRemaining -= 1
+                            promille -= 1/84600
+                }
+            }
+
             Button (action:
                     {
                         self.pressP.toggle()
