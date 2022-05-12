@@ -20,6 +20,7 @@ struct ContentView: View {
     var age: Int = 0
     @State var good = false
     @State var alertCont = false
+    @State var checkButton = false
     
     var body: some View {
         
@@ -69,17 +70,25 @@ struct ContentView: View {
                                 if age < 18{
                                     self.alertCont = true
                                 }
+                                else{
+                                    self.checkButton = true
+                                }
                                 self.good = true
-                            }){
+                            })
+                            {
+                                ZStack{
                                 Text("Confirm")
                                     .fontWeight(.bold)
                                     .frame(width: 232, height: 69, alignment: .center)
-                                    .disabled(weight.isEmpty)
-                                    .opacity((weight.isEmpty) ? 0.9 : 1)
+                                    .opacity((weight.isEmpty) ? 0.5 : 1)
                                     .foregroundColor((weight.isEmpty) ? Color.black : Color.white)
-                                    .background((weight.isEmpty) ? Color.gray : yellow)
+                                    .background(yellow)
                                     .cornerRadius(10)
-                            }.opacity((weight.isEmpty) ? 0.2 : 1)
+                                Image("check")
+                                        .opacity((self.checkButton == false || self.good == false) ? 0 : 1)
+                                        .frame(width: 215, height: 0, alignment: .trailing)
+                                }}.opacity((weight.isEmpty) ? 0.2 : 1)
+                                .disabled(weight.isEmpty)
                                 .alert(isPresented: $alertCont) {
                                     Alert(title: Text("Message"), message: Text("You're too young"), dismissButton: .destructive(Text("OK"), action: {
                                         self.good = false
@@ -117,7 +126,7 @@ struct ContentView: View {
                     
                     VStack{
                         Text("Version 1.0\n Popov edition").fontWeight(.ultraLight).multilineTextAlignment(.center)
-                    }.padding(.top).frame(width: 300 ,height: 90, alignment: .bottom)
+                    }.padding(.top).frame(width: 300 ,height: 75, alignment: .bottom)
                 }
                 .frame(width: 350, height: 800, alignment: .top)
                 
