@@ -4,19 +4,11 @@
     "Localizable": [
       {
         "comment": "",
-        "key": "here will be percentage"
-      },
-      {
-        "comment": "",
-        "key": "A"
-      },
-      {
-        "comment": "",
         "key": "Menu"
       },
       {
         "comment": "",
-        "key": "Shop"
+        "key": "Drunk List"
       }
     ]
   },

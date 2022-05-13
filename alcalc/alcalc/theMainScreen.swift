@@ -30,7 +30,10 @@ struct theMainScreen: View {
                 darkGray.ignoresSafeArea()
             VStack{
             HStack{
-            Text("\(String(format: "%.2f",promille))"+"‰").onReceive(timer) { _ in
+                Text("Per mille: "+"\(String(format: "%.2f",promille))"+"‰")
+                    .font(.title)
+                    .fontWeight(.bold).foregroundColor(.white)
+                    .onReceive(timer) { _ in
                     if timeRemaining > 0 && promille > 0{
                                 timeRemaining -= 1
                                 promille -= 1/84600
@@ -42,11 +45,7 @@ struct theMainScreen: View {
                             self.pressP.toggle()
                         })
                         {
-                            Text("A").foregroundColor(.black)
-                                .frame(width: 40, height: 40)
-                                .background(Color.yellow)
-                                .cornerRadius(15)
-                                .padding(.leading, 100.0)
+                            Image("crown").frame(width:65, height:65, alignment: .center).opacity(1).background(Color.yellow).cornerRadius(10)
                         }
                         .padding(.leading)
                         .sheet(isPresented: $pressP)
@@ -55,38 +54,37 @@ struct theMainScreen: View {
                                 
                             }.frame(alignment: .trailing).padding()
             
-            }.frame(width: 500,height: 100,alignment: .center).background(gray)
+            }.frame(maxWidth: 500, maxHeight: 130,alignment: .center).background(gray)
             HStack{
                 Image("cat").resizable().frame(width: 200, height: 300, alignment: .center)
-            }.frame(maxHeight: .infinity, alignment: .bottom)
+            }.frame(maxHeight: .infinity, alignment: .center)
             HStack{
-                
                 NavigationLink(destination: Menu(name: "", alcohol: "", volume: "", selColor: Color.white, allVol: $allVol, allAlc: $allAlc, promille: $promille)){
-                        Text("Menu")
+                        Text("Menu").fontWeight(.bold)
                                     .frame( alignment: .leading).foregroundColor(.white)
                                     .frame(width: 162, height: 122)
                                     .background(Color.yellow)
                                     .cornerRadius(10)
                                     
-                }.padding()
+                }
+                .padding(.trailing, 7.0)
                 Button (action:
                         {
                             self.pressS.toggle()
                         })
                         {
-                            Text("Drunk List").foregroundColor(.white)
+                            Text("Drunk List").fontWeight(.bold).foregroundColor(.white)
                                 .frame(width: 162, height: 122)
                                 .background(Color.orange)
                                 .cornerRadius(10)
-                                .padding()
                         }
-                        .padding(.leading)
+                        .padding(.leading, 7.0)
                         .sheet(isPresented: $pressS)
                             {
                                 ListOfDrinked()
                                 
-                            }.frame(alignment: .trailing).padding(.leading, 20.0)
-            }.frame(maxHeight: .infinity, alignment: .bottom).padding(.horizontal, 50.0)
+                            }.frame(alignment: .trailing)
+            }.padding(.bottom, 15.0).frame(maxWidth:500, maxHeight: 150, alignment: .bottom)
         }
             }.navigationBarHidden(true)
         }

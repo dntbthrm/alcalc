@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		414438162828859300905AEA /* ListOfDrinked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414438152828859300905AEA /* ListOfDrinked.swift */; };
 		418B730E28154B44007E8292 /* theMainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B730D28154B44007E8292 /* theMainScreen.swift */; };
+		41ABFEC4282EFDDA000ABC4E /* crown.png in Resources */ = {isa = PBXBuildFile; fileRef = 41ABFEC3282EFDDA000ABC4E /* crown.png */; };
 		41F08D16281332EA00003AD1 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F08D15281332EA00003AD1 /* Menu.swift */; };
 		7CA16407281BE9660034FCF2 /* settingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA16406281BE9660034FCF2 /* settingsScreen.swift */; };
 		7CC9FBBA280F3E3000FC6E19 /* alcalcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC9FBB9280F3E3000FC6E19 /* alcalcApp.swift */; };
@@ -22,6 +23,7 @@
 		414438152828859300905AEA /* ListOfDrinked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfDrinked.swift; sourceTree = "<group>"; };
 		418B730D28154B44007E8292 /* theMainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theMainScreen.swift; sourceTree = "<group>"; };
 		418B7313281557BA007E8292 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		41ABFEC3282EFDDA000ABC4E /* crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crown.png; sourceTree = SOURCE_ROOT; };
 		41F08D15281332EA00003AD1 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		7CA16406281BE9660034FCF2 /* settingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsScreen.swift; sourceTree = "<group>"; };
 		7CC9FBB6280F3E3000FC6E19 /* alcalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alcalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +73,7 @@
 				41F08D15281332EA00003AD1 /* Menu.swift */,
 				418B7313281557BA007E8292 /* cat.png */,
 				7CC9FBBD280F3E3100FC6E19 /* Assets.xcassets */,
+				41ABFEC3282EFDDA000ABC4E /* crown.png */,
 				7CC9FBBF280F3E3100FC6E19 /* Preview Content */,
 			);
 			path = alcalc;
@@ -142,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41ABFEC4282EFDDA000ABC4E /* crown.png in Resources */,
 				7CC9FBC1280F3E3100FC6E19 /* Preview Assets.xcassets in Resources */,
 				7CC9FBBE280F3E3100FC6E19 /* Assets.xcassets in Resources */,
 			);

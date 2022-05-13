@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>2068947A-B0A6-4117-8D03-A70083DC521A</key>
+		<key>332380A0-DCCD-4EC2-8877-03BA49ED386C</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>2068947A-B0A6-4117-8D03-A70083DC521A.xcactivitylog</string>
+			<string>332380A0-DCCD-4EC2-8877-03BA49ED386C.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,15 +32,15 @@
 			<key>signature</key>
 			<string>Run alcalc</string>
 			<key>timeStartedRecording</key>
-			<real>674082966.13496196</real>
+			<real>674167858.19526803</real>
 			<key>timeStoppedRecording</key>
-			<real>674083001.06283295</real>
+			<real>674167943.26100004</real>
 			<key>title</key>
 			<string>Run alcalc</string>
 			<key>uniqueIdentifier</key>
-			<string>2068947A-B0A6-4117-8D03-A70083DC521A</string>
+			<string>332380A0-DCCD-4EC2-8877-03BA49ED386C</string>
 		</dict>
-		<key>A859CC1E-2546-4E5E-96E1-2D16783263CC</key>
+		<key>65BF9BA0-1417-42C5-AA72-33245723D503</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -49,7 +49,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>A859CC1E-2546-4E5E-96E1-2D16783263CC.xcactivitylog</string>
+			<string>65BF9BA0-1417-42C5-AA72-33245723D503.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -66,15 +66,15 @@
 			<key>signature</key>
 			<string>Run alcalc</string>
 			<key>timeStartedRecording</key>
-			<real>674082942.36211801</real>
+			<real>674168306.217677</real>
 			<key>timeStoppedRecording</key>
-			<real>674082963.77178001</real>
+			<real>674168349.83929002</real>
 			<key>title</key>
 			<string>Run alcalc</string>
 			<key>uniqueIdentifier</key>
-			<string>A859CC1E-2546-4E5E-96E1-2D16783263CC</string>
+			<string>65BF9BA0-1417-42C5-AA72-33245723D503</string>
 		</dict>
-		<key>AA46775F-BD5F-4BC8-87B3-E2B810C83333</key>
+		<key>78FCF540-9AA0-46CE-AAEB-4BAF4B37C320</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -83,7 +83,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>AA46775F-BD5F-4BC8-87B3-E2B810C83333.xcactivitylog</string>
+			<string>78FCF540-9AA0-46CE-AAEB-4BAF4B37C320.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -100,13 +100,13 @@
 			<key>signature</key>
 			<string>Run alcalc</string>
 			<key>timeStartedRecording</key>
-			<real>674083065.04799402</real>
+			<real>674168801.12307703</real>
 			<key>timeStoppedRecording</key>
-			<real>674083107.13820505</real>
+			<real>674168838.569224</real>
 			<key>title</key>
 			<string>Run alcalc</string>
 			<key>uniqueIdentifier</key>
-			<string>AA46775F-BD5F-4BC8-87B3-E2B810C83333</string>
+			<string>78FCF540-9AA0-46CE-AAEB-4BAF4B37C320</string>
 		</dict>
 	</dict>
 </dict>

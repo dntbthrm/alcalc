@@ -16,6 +16,10 @@
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>crown.png</key>
+		<data>
+		PaEdFBlB/gV0OLF/b9GUQ4BPdTM=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -24,6 +28,13 @@
 			<key>hash2</key>
 			<data>
 			kObLBPdWW2lSbvPAw8XcGcp+bIhhRH2mggM9vQfBtmQ=
+			</data>
+		</dict>
+		<key>crown.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JDYBSwc0LBoUUFAj7XRhjxlWqQ9Vfl9ZArKgWfKAbzs=
 			</data>
 		</dict>
 	</dict>
