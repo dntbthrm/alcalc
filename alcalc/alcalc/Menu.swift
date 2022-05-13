@@ -75,32 +75,39 @@ struct Menu: View {
         
         ZStack{
             
+            darkGray.ignoresSafeArea()
             
             VStack{
                 
                 ScrollView{
                     LazyVGrid(columns: columns, spacing: 20){
                         ForEach(drinksArray.indices, id: \.self){ item in
-                            VStack(alignment: .leading, spacing: 10){
-                                Text(drinksArray[item].name).bold()
-                                Text("Alcohol: " + drinksArray[item].alcohol + "%")
-                            }.frame(width: 175, height: 175)
-                                .background(drinksArray[item].color)
-                                .cornerRadius(30)
-                                .foregroundColor(Color.white)
-                                .onTapGesture{
+                            
+                            Button(action:{}){
+                                VStack(alignment: .leading, spacing: 10){
+                                    Text(drinksArray[item].name).bold()
+                                    Text("Alcohol: " + drinksArray[item].alcohol + "%")
+                                }.frame(width: 175, height: 175)
+                                    .background(drinksArray[item].color)
+                                    .cornerRadius(10)
+                                    .foregroundColor(Color.white)
+                                
+                            }.simultaneousGesture(LongPressGesture().onEnded { _ in
+                                if(item > 5){
+                                    ind = item
+                                    showDelete = true}
+                            })
+                            .highPriorityGesture(TapGesture()
+                                .onEnded { _ in
                                     name = "\(drinksArray[item].name)"
                                     alcohol = "\(drinksArray[item].alcohol)"
                                     ind = item
-                                    showDrink = true }
-                                .onLongPressGesture{
-                                    if(item > 5){
-                                        ind = item
-                                        showDelete = true} }
+                                    showDrink = true
+                                })
+                            
                         }.disabled(showAdd || showDrink)
                     }.padding()
                 }
-                
                 Button(action:{
                     self.showAdd = true
                 }){
@@ -137,13 +144,13 @@ struct Menu: View {
                             VStack(alignment: .center, spacing: 10){
                                 TextField("Name", text: $name).padding().frame(width: 265, height: 58).overlay(
                                     RoundedRectangle(cornerRadius: 10.0)
-                                        .stroke(Color.gray, lineWidth: 1.0)).background(gray).cornerRadius(10)
+                                        .stroke(Color.gray, lineWidth: 1.0)).background(Color.white).cornerRadius(10)
                                 TextField("%", text: $alcohol).padding().frame(width: 265, height: 58).overlay(
                                     RoundedRectangle(cornerRadius: 10.0)
-                                        .stroke(Color.gray, lineWidth: 1.0)).background(gray).cornerRadius(10)
+                                        .stroke(Color.gray, lineWidth: 1.0)).background(Color.white).cornerRadius(10)
                                 TextField("ml", text: $volume).padding().frame(width: 265, height: 58).overlay(
                                     RoundedRectangle(cornerRadius: 10.0)
-                                        .stroke(Color.gray, lineWidth: 1.0)).background(gray).cornerRadius(10)
+                                        .stroke(Color.gray, lineWidth: 1.0)).background(Color.white).cornerRadius(10)
                                 ScrollView(.horizontal){
                                     HStack{
                                         ForEach(colors, id: \.self){ color in
@@ -159,7 +166,7 @@ struct Menu: View {
                                 }.frame(width: 265, height: 90).overlay(
                                     RoundedRectangle(cornerRadius: 10)
                                         .stroke(Color.gray, lineWidth: 1.0)
-                                ).background(gray).cornerRadius(10)
+                                ).background(Color.white).cornerRadius(10)
                             }.frame(height: 304 ,alignment: .center)
                             
                             

@@ -9,7 +9,10 @@ import SwiftUI
 
 struct settingsScreen: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            darkGray.ignoresSafeArea()
+            Text("Comming Soon").fontWeight(.bold).font(.largeTitle).foregroundColor(.white).frame(alignment: .center)
+        }
     }
 }
 
