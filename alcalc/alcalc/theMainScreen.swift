@@ -30,9 +30,11 @@ struct theMainScreen: View {
                 darkGray.ignoresSafeArea()
             VStack{
             HStack{
-                Text("Per mille: "+"\(String(format: "%.2f",promille))"+"‰")
+                Text("\(String(format: "%.2f",promille))"+"‰")
                     .font(.title)
                     .fontWeight(.bold).foregroundColor(.white)
+                    
+                    .padding(.trailing, 107.0)
                     .onReceive(timer) { _ in
                     if timeRemaining > 0 && promille > 0{
                                 timeRemaining -= 1
@@ -45,14 +47,14 @@ struct theMainScreen: View {
                             self.pressP.toggle()
                         })
                         {
-                            Image("crown").frame(width:65, height:65, alignment: .center).opacity(1).background(Color.yellow).cornerRadius(10)
+                            Image("crown").padding().frame(width:65, height:65, alignment: .center).opacity(1).background(Color.yellow).cornerRadius(10)
                         }
-                        .padding(.leading)
+                        .padding(.vertical).frame(width: 115, alignment: .trailing)
                         .sheet(isPresented: $pressP)
                             {
                                 Progress_Screen()
                                 
-                            }.frame(alignment: .trailing).padding()
+                            }
             
             }.frame(maxWidth: 500, maxHeight: 100,alignment: .bottom).background(gray)
             HStack{
