@@ -50,6 +50,9 @@ let yellow = Color(red: 240 / 255, green: 186 / 255, blue: 52 / 255)
 
 
 struct Menu: View {
+    
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    
     @State var showAdd = false
     @State var showDrink = false
     @State var showDelete = false
@@ -63,31 +66,31 @@ struct Menu: View {
     @Binding var promille: Float
     
     let columns = [
-        GridItem(.flexible()),
-        GridItem(.flexible())
+        GridItem(.flexible(), spacing: 0),
+        GridItem(.flexible(), spacing: 0)
     ]
     
     let colors: [Color] = [Color.red, Color.green, Color.blue, Color.yellow, Color.black, Color.pink, Color.mint]
     
-    
-    
     var body: some View {
+        
+        
         
         ZStack{
             
             darkGray.ignoresSafeArea()
             
             VStack{
-                
+
                 ScrollView{
-                    LazyVGrid(columns: columns, spacing: 20){
+                    LazyVGrid(columns: columns, spacing: UIScreen.main.bounds.height * 0.0215){
                         ForEach(drinksArray.indices, id: \.self){ item in
                             
                             Button(action:{}){
-                                VStack(alignment: .leading, spacing: 10){
+                                VStack(alignment: .leading, spacing: UIScreen.main.bounds.height * 0.0107){
                                     Text(drinksArray[item].name).bold()
                                     Text("Alcohol: " + drinksArray[item].alcohol + "%")
-                                }.frame(width: 175, height: 175)
+                                }.frame(width: UIScreen.main.bounds.width * 0.408, height: UIScreen.main.bounds.width * 0.408, alignment: .center)
                                     .background(drinksArray[item].color)
                                     .cornerRadius(10)
                                     .foregroundColor(Color.white)
@@ -106,26 +109,28 @@ struct Menu: View {
                                 })
                             
                         }.disabled(showAdd || showDrink)
-                    }.padding()
-                }
+                    }
+                }.padding(.horizontal)
+                
                 Button(action:{
                     self.showAdd = true
                 }){
                     Text("Add Drink")
-                        .frame(width: 376, height: 82, alignment: .center)
+                        .frame(width: UIScreen.main.bounds.width * 0.8785, height: UIScreen.main.bounds.height * 0.08855, alignment: .center)
                         .foregroundColor(Color.white)
                         .background(orange)
                         .cornerRadius(10)
                         .disabled(showDrink)
-                }
+                }.padding(.bottom)
                 
-            }
+                
+            }.frame(alignment: .top)
             
             if(showAdd){
                 ZStack {
                     
                         
-                        VStack(spacing: 10){
+                    VStack(spacing: UIScreen.main.bounds.height * 0.0107){
                             VStack{
                             
                             
@@ -136,19 +141,19 @@ struct Menu: View {
                                 volume = ""
                                 self.showAdd = false
                             }){
-                                Text("X").frame(width: 41, height: 41, alignment: .center).background(gray).cornerRadius(10).foregroundColor(Color.white)
+                                Text("X").frame(width: UIScreen.main.bounds.width * 0.095, height: UIScreen.main.bounds.width * 0.095, alignment: .center).background(darkGray).cornerRadius(10).foregroundColor(Color.white)
                             }
-                            }.frame(width: 300,height: 41, alignment: .topTrailing).padding()
+                            }.frame(width: UIScreen.main.bounds.width * 0.7 ,height: UIScreen.main.bounds.height * 0.0442, alignment: .topTrailing).padding()
                             
                             
-                            VStack(alignment: .center, spacing: 10){
-                                TextField("Name", text: $name).padding().frame(width: 265, height: 58).overlay(
+                            VStack(alignment: .center, spacing: UIScreen.main.bounds.height * 0.0107){
+                                TextField("Name", text: $name).padding().frame(width: UIScreen.main.bounds.width * 0.6191, height: UIScreen.main.bounds.height * 0.0626).overlay(
                                     RoundedRectangle(cornerRadius: 10.0)
                                         .stroke(Color.gray, lineWidth: 1.0)).background(Color.white).cornerRadius(10)
-                                TextField("%", text: $alcohol).padding().frame(width: 265, height: 58).overlay(
+                                TextField("%", text: $alcohol).padding().frame(width: UIScreen.main.bounds.width * 0.6191, height: UIScreen.main.bounds.height * 0.0626).overlay(
                                     RoundedRectangle(cornerRadius: 10.0)
                                         .stroke(Color.gray, lineWidth: 1.0)).background(Color.white).cornerRadius(10)
-                                TextField("ml", text: $volume).padding().frame(width: 265, height: 58).overlay(
+                                TextField("ml", text: $volume).padding().frame(width: UIScreen.main.bounds.width * 0.6191, height: UIScreen.main.bounds.height * 0.0626).overlay(
                                     RoundedRectangle(cornerRadius: 10.0)
                                         .stroke(Color.gray, lineWidth: 1.0)).background(Color.white).cornerRadius(10)
                                 ScrollView(.horizontal){
@@ -163,11 +168,11 @@ struct Menu: View {
                                                 }
                                         }
                                     }.padding()
-                                }.frame(width: 265, height: 90).overlay(
+                                }.frame(width: UIScreen.main.bounds.width * 0.6191, height: UIScreen.main.bounds.height * 0.0971).overlay(
                                     RoundedRectangle(cornerRadius: 10)
                                         .stroke(Color.gray, lineWidth: 1.0)
                                 ).background(Color.white).cornerRadius(10)
-                            }.frame(height: 304 ,alignment: .center)
+                            }.frame(height: UIScreen.main.bounds.height * 0.3282 ,alignment: .center)
                             
                             
                             VStack{
@@ -182,17 +187,18 @@ struct Menu: View {
                                 }){
                                 
                                     Text("Add").foregroundColor(Color.white)
-                                        .frame(width: 232, height: 69, alignment: .center)
-                                        .background((name.isEmpty || alcohol.isEmpty || volume.isEmpty) || (selColor == Color.white) ? Color.gray : yellow)
+                                        .frame(width: UIScreen.main.bounds.width * 0.542, height: UIScreen.main.bounds.height * 0.0745, alignment: .center)
+                                        .background(yellow)
+                                        .opacity((name.isEmpty || alcohol.isEmpty || volume.isEmpty) || (selColor == Color.white) ? 0.5 : 1.0)
                                         .cornerRadius(20)
                                 }.disabled((name.isEmpty || alcohol.isEmpty || volume.isEmpty) || (selColor == Color.white))
                                 
                                 
-                            }.padding().frame(height: 90, alignment: .bottom)
-                        }.frame(width: 320, height: 493, alignment: .top)
+                            }.padding().frame(height: UIScreen.main.bounds.height * 0.0971, alignment: .bottom)
+                    }.frame(width: UIScreen.main.bounds.width * 0.7476, height: UIScreen.main.bounds.height * 0.5323, alignment: .top)
                         
                     
-                }.frame(width: 320, height:493).background(darkGray)
+                }.frame(width: UIScreen.main.bounds.width * 0.7476, height: UIScreen.main.bounds.height * 0.5323).background(gray)
                     .cornerRadius(20).shadow(radius: 20).padding()
             }
             
@@ -277,7 +283,17 @@ struct Menu: View {
                 }.frame(width: 300, height: 200)
                     .cornerRadius(20).shadow(radius: 20)
             }
-        }
+        }.navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading: Button(action : {
+                self.mode.wrappedValue.dismiss()
+            }){
+                ZStack{
+                    Circle()
+                        .stroke(orange, lineWidth: 3)
+                        .frame(width: 35, height: 35)
+                    Image(systemName: "arrow.left").foregroundColor(orange)
+                }
+            })
         
         
         

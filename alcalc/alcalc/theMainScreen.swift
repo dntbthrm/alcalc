@@ -54,7 +54,7 @@ struct theMainScreen: View {
                                 
                             }.frame(alignment: .trailing).padding()
             
-            }.frame(maxWidth: 500, maxHeight: 130,alignment: .center).background(gray)
+            }.frame(maxWidth: 500, maxHeight: 100,alignment: .bottom).background(gray)
             HStack{
                 Image("cat").resizable().frame(width: 200, height: 300, alignment: .center)
             }.frame(maxHeight: .infinity, alignment: .center)
