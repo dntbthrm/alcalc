@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-
+import AVKit
+import AVFoundation
 struct Drinked: Identifiable{
     var id = UUID()
     let name: String
@@ -16,6 +17,7 @@ struct Drinked: Identifiable{
 var DrinkedList: [Drinked] = []
 
 struct theMainScreen: View {
+    
     @State private var pressM = false
     @State private var pressP = false
     @State private var pressS = false
@@ -24,8 +26,17 @@ struct theMainScreen: View {
     @State private var promille: Float = 0
     @State var timeRemaining = 84600
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-
+    private var videoURL1: URL?
+    private var videoURL2: URL?
+    private var videoURL3: URL?
+            init() {
+                videoURL1 = Bundle.main.url(forResource: "chel1", withExtension: "mov")
+                videoURL2 = Bundle.main.url(forResource: "chel2", withExtension: "mov")
+                videoURL3 = Bundle.main.url(forResource: "chel3", withExtension: "mov")
+            }
+    
     var body: some View {
+        
             ZStack{
                 darkGray.ignoresSafeArea()
             VStack{
@@ -45,6 +56,7 @@ struct theMainScreen: View {
                 Button (action:
                         {
                             self.pressP.toggle()
+                            
                         })
                         {
                             Image("crown").padding().frame(width:65, height:65, alignment: .center).opacity(1).background(Color.yellow).cornerRadius(10)
@@ -56,10 +68,19 @@ struct theMainScreen: View {
                                 
                             }
             
-            }.frame(maxWidth: 500, maxHeight: 100,alignment: .bottom).background(gray)
-            HStack{
-                Image("cat").resizable().frame(width: 200, height: 300, alignment: .center)
-            }.frame(maxHeight: .infinity, alignment: .center)
+            }.frame(width: 500, height: 150, alignment: .bottom).background(gray).edgesIgnoringSafeArea([.top, .bottom])
+            VStack{
+                if promille <= 1{
+                    Looper1().frame(width:300, height: 500)
+                }
+                if promille > 1 && promille <= 2 {
+                    Looper2().frame(width:300, height: 500)
+                }
+                if promille > 2 {
+                    Looper3().frame(width:300, height: 500)
+                }
+                
+            }.frame(maxHeight: .greatestFiniteMagnitude, alignment: .center)
             HStack{
                 NavigationLink(destination: Menu(name: "", alcohol: "", volume: "", selColor: Color.white, allVol: $allVol, allAlc: $allAlc, promille: $promille)){
                         Text("Menu").fontWeight(.bold)
@@ -86,7 +107,7 @@ struct theMainScreen: View {
                                 ListOfDrinked()
                                 
                             }.frame(alignment: .trailing)
-            }.padding(.bottom, 15.0).frame(maxWidth:500, maxHeight: 150, alignment: .bottom)
+            }.padding(.bottom, 15.0).frame(width:500, height: 150, alignment: .bottom)
         }
             }.navigationBarHidden(true)
         }
@@ -97,3 +118,117 @@ struct theMainScreen_Previews: PreviewProvider {
         theMainScreen()
     }
 }
+
+
+struct Looper1: UIViewRepresentable {
+    func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<Looper1>) {
+    }
+
+    func makeUIView(context: Context) -> UIView {
+        return thePlayerForChel1(frame: .zero)
+    }
+}
+
+class thePlayerForChel1: UIView {
+    private let playerLayer = AVPlayerLayer()
+    private var playerLooper: AVPlayerLooper?
+    @State private var promille: Float = 0
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        let fileUrl = Bundle.main.url(forResource: "chel1", withExtension: "mov")!
+        let asset = AVAsset(url: fileUrl)
+        let item = AVPlayerItem(asset: asset)
+        let player = AVQueuePlayer()
+        playerLayer.player = player
+        playerLayer.videoGravity = .resizeAspectFill
+        layer.addSublayer(playerLayer)
+
+        playerLooper = AVPlayerLooper(player: player, templateItem: item)
+
+        player.play()
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        playerLayer.frame = bounds
+    }
+}
+
+struct Looper2: UIViewRepresentable {
+    func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<Looper2>) {
+    }
+
+    func makeUIView(context: Context) -> UIView {
+        return thePlayerForChel2(frame: .zero)
+    }
+}
+class thePlayerForChel2: UIView {
+    private let playerLayer = AVPlayerLayer()
+    private var playerLooper: AVPlayerLooper?
+    @State private var promille: Float = 0
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        let fileUrl = Bundle.main.url(forResource: "chel2", withExtension: "mov")!
+        let asset = AVAsset(url: fileUrl)
+        let item = AVPlayerItem(asset: asset)
+        let player = AVQueuePlayer()
+        playerLayer.player = player
+        playerLayer.videoGravity = .resizeAspectFill
+        layer.addSublayer(playerLayer)
+
+        playerLooper = AVPlayerLooper(player: player, templateItem: item)
+
+        player.play()
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        playerLayer.frame = bounds
+    }
+}
+
+struct Looper3: UIViewRepresentable {
+    func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<Looper3>) {
+    }
+
+    func makeUIView(context: Context) -> UIView {
+        return thePlayerForChel3(frame: .zero)
+    }
+}
+class thePlayerForChel3: UIView {
+    private let playerLayer = AVPlayerLayer()
+    private var playerLooper: AVPlayerLooper?
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        let fileUrl = Bundle.main.url(forResource: "chel3", withExtension: "mov")!
+        let asset = AVAsset(url: fileUrl)
+        let item = AVPlayerItem(asset: asset)
+        let player = AVQueuePlayer()
+        playerLayer.player = player
+        playerLayer.videoGravity = .resizeAspectFill
+        layer.addSublayer(playerLayer)
+
+        playerLooper = AVPlayerLooper(player: player, templateItem: item)
+
+        player.play()
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        playerLayer.frame = bounds
+    }
+}
+
+

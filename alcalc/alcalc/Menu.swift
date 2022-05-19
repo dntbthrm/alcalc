@@ -43,7 +43,7 @@ var drinksArray = [
 ]
 
 let orange = Color(red: 207 / 255, green: 119 / 255, blue: 37 / 255)
-let darkGray = Color(red: 91 / 255, green: 93 / 255, blue: 82 / 255)
+let darkGray = Color(red: 102 / 255, green: 104 / 255, blue: 91 / 255)
 let gray = Color(red: 171 / 255, green: 172 / 255, blue: 167 / 255)
 let yellow = Color(red: 240 / 255, green: 186 / 255, blue: 52 / 255)
 
@@ -73,8 +73,7 @@ struct Menu: View {
     let colors: [Color] = [Color.red, Color.green, Color.blue, Color.yellow, Color.black, Color.pink, Color.mint]
     
     var body: some View {
-        
-        
+
         
         ZStack{
             
