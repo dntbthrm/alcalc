@@ -87,7 +87,7 @@ struct ContentView: View {
                                 Image("check")
                                         .opacity((self.checkButton == false || self.good == false) ? 0 : 1)
                                         .frame(width: 215, height: 0, alignment: .trailing)
-                                }}.opacity((weight.isEmpty) ? 0.2 : 1)
+                                }}.opacity((weight.isEmpty) ? 0.3 : 1)
                                 .disabled(weight.isEmpty)
                                 .alert(isPresented: $alertCont) {
                                     Alert(title: Text("Message"), message: Text("You're too young"), dismissButton: .destructive(Text("OK"), action: {
@@ -110,6 +110,7 @@ struct ContentView: View {
                                     .cornerRadius(10)
                                     .foregroundColor(.white)
                             }.disabled(good == false)
+                                .opacity((good == false) ? 0.5 : 1)
                         }
                         VStack{
                             NavigationLink(destination: settingsScreen()){

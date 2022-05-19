@@ -8,7 +8,7 @@
 import SwiftUI
 import AVKit
 import AVFoundation
-struct Drinked: Identifiable{
+struct Drinked: Hashable{
     var id = UUID()
     let name: String
     let alcohol: String
