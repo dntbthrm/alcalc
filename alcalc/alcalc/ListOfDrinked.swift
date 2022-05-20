@@ -19,13 +19,14 @@ struct ListOfDrinked: View {
                 }
             }
             ScrollView{
+                Spacer()
             VStack(alignment: .center, spacing: 0){
                 ForEach(DrinkedList, id: \.id) { index in
                     ZStack{
                         HStack(alignment: .center){
                             HStack{
-                                Rectangle()
-                                    .frame(width: 50, height: 100, alignment: .center).foregroundColor(.white)
+                                Circle()
+                                    .frame(width: 20, height: 20, alignment: .center).foregroundColor(index.color).padding(.leading,35)
                                 Text(index.name).font(.title3).fontWeight(.bold)
                                 Text(index.alcohol + " %").padding().frame(alignment: .leading)
                             }.frame(width: 280, alignment: .leading)
