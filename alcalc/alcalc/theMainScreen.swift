@@ -8,11 +8,13 @@
 import SwiftUI
 import AVKit
 import AVFoundation
+
 struct Drinked: Hashable{
     var id = UUID()
     let name: String
     let alcohol: String
     let volume: String
+    let color: Color
 }
 var DrinkedList: [Drinked] = []
 
@@ -82,7 +84,7 @@ struct theMainScreen: View {
                 
             }.frame(maxHeight: .greatestFiniteMagnitude, alignment: .center)
             HStack{
-                NavigationLink(destination: Menu(name: "", alcohol: "", volume: "", selColor: Color.white, allVol: $allVol, allAlc: $allAlc, promille: $promille)){
+                NavigationLink(destination: Menu(name: "", alcohol: "", volume: "", selColor: Color.white, color: .white, allVol: $allVol, allAlc: $allAlc, promille: $promille)){
                         Text("Menu").fontWeight(.bold)
                                     .frame( alignment: .leading).foregroundColor(.white)
                                     .frame(width: 162, height: 122)

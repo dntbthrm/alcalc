@@ -60,6 +60,7 @@ struct Menu: View {
     @State var alcohol: String
     @State var volume: String
     @State var selColor: Color
+    @State var color: Color
     @Binding var allVol: Int
     @State var ind: Int = 0
     @Binding var allAlc: Float
@@ -103,6 +104,7 @@ struct Menu: View {
                                 .onEnded { _ in
                                     name = "\(drinksArray[item].name)"
                                     alcohol = "\(drinksArray[item].alcohol)"
+                                    color = drinksArray[item].color
                                     ind = item
                                     showDrink = true
                                 })
@@ -204,19 +206,17 @@ struct Menu: View {
             
             if(showDrink){
                 ZStack {
-                    
-                    Color.white
+                    gray
                     VStack {
                         VStack{
-                            Button(action: {
-                                name = ""
-                                alcohol = ""
-                                volume = ""
+                            VStack{
+                            
+                            Button(action:{
                                 self.showDrink = false
-                            }, label:{
-                                Text("X")
-                            }).position(x: 250, y: 15)
-                                .colorMultiply(Color.orange)
+                            }){
+                                Text("X").frame(width: 41, height: 41, alignment: .center).background(darkGray).cornerRadius(10).foregroundColor(Color.white)
+                            }
+                            }.frame(width: 250 ,height: 41, alignment: .topTrailing).padding()
                             
                             Spacer()
                             
@@ -228,7 +228,7 @@ struct Menu: View {
                             Spacer()
                             Button(action: {
                                 drinksArray[ind].progress += (Double(volume) ?? 0)/drinksArray[ind].target
-                                DrinkedList.append(Drinked(name: name, alcohol: alcohol, volume: volume))
+                                DrinkedList.append(Drinked(name: name, alcohol: alcohol, volume: volume, color: color))
                                 allVol = Int(volume) ?? 0
                                 allAlc = (Float(alcohol) ?? 0)*0.01
                                 promille += Float(allVol)*allAlc*0.8/(koeff*(Float(weightGlobal) ?? 0))
@@ -250,37 +250,34 @@ struct Menu: View {
             
             if(showDelete){
                 ZStack{
-                    Color.white
+                    darkGray
                     VStack{
                         
-                        Button(action: {
-                            name = ""
-                            alcohol = ""
-                            volume = ""
-                            self.showDelete = false
-                        }, label:{
-                            Text("X")
-                        }).position(x: 250, y: 15)
-                            .colorMultiply(Color.orange)
-                        
                         Spacer()
                         
-                        Text("Want to delete?")
+                        Text("Want to delete?").fontWeight(.bold).font(.title).frame(alignment: .top).foregroundColor(.white)
                         
                         Spacer()
+                        VStack(alignment: .center, spacing: 0){
+                            Button(action: {
+                                drinksArray.remove(at: ind)
+                                self.showDelete = false
+                            }){
+                                Text("Delete").fontWeight(.bold).frame(width: 400, height: 50).border(gray).foregroundColor(orange)
+                            }
+                            
+                            Button(action: {
+                                self.showDelete = false
+                            }){
+                                Text("Cancel").frame(width: 400, height: 50).foregroundColor(.white)
+                            }
+                        }.frame(alignment: .bottom)
                         
-                        Button(action: {
-                            drinksArray.remove(at: ind)
-                            self.showDelete = false
-                        }, label:{
-                            Text("Delete")
-                        }).colorMultiply(Color.red)
                         
-                        
-                    }.padding()
+                    }.padding(0).frame(width: 300, height: 200, alignment: .center)
                     
                 }.frame(width: 300, height: 200)
-                    .cornerRadius(20).shadow(radius: 20)
+                    .cornerRadius(20).shadow(radius: 20).padding(0)
             }
         }.navigationBarBackButtonHidden(true)
             .navigationBarItems(leading: Button(action : {
