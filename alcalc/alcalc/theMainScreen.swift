@@ -27,6 +27,8 @@ struct theMainScreen: View {
     @State private var allAlc: Float = 0
     @State private var promille: Float = 0
     @State var timeRemaining = 84600
+    @State var alcAlert = false
+    @State var shown = false
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     private var videoURL1: URL?
     private var videoURL2: URL?
@@ -52,7 +54,11 @@ struct theMainScreen: View {
                     if timeRemaining > 0 && promille > 0{
                                 timeRemaining -= 1
                                 promille -= 1/84600
+                        
                     }
+                        if promille >= 1.5 && shown == false {
+                            self.alcAlert = true
+                        }
             }
 
                 Button (action:
@@ -71,6 +77,7 @@ struct theMainScreen: View {
                             }
             
             }.frame(width: 500, height: 150, alignment: .bottom).background(gray).edgesIgnoringSafeArea([.top, .bottom])
+                
             VStack{
                 if promille <= 1{
                     Looper1().frame(width:300, height: 500)
@@ -92,6 +99,11 @@ struct theMainScreen: View {
                                     .cornerRadius(10)
                                     
                 }
+                    .alert(isPresented: $alcAlert) {
+                        Alert(title: Text("Attention!").fontWeight(.bold), message: Text("Halfway to alcohol intoxication!"), dismissButton: .destructive(Text("OK"), action: {
+                        self.shown = true
+                        }))
+                    }
                 .padding(.trailing, 7.0)
                 Button (action:
                         {
@@ -136,7 +148,7 @@ class thePlayerForChel1: UIView {
     private var playerLooper: AVPlayerLooper?
     @State private var promille: Float = 0
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError("stop")
     }
 
     override init(frame: CGRect) {
@@ -173,7 +185,7 @@ class thePlayerForChel2: UIView {
     private var playerLooper: AVPlayerLooper?
     @State private var promille: Float = 0
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError("stop")
     }
 
     override init(frame: CGRect) {
@@ -209,7 +221,7 @@ class thePlayerForChel3: UIView {
     private let playerLayer = AVPlayerLayer()
     private var playerLooper: AVPlayerLooper?
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError("stop")
     }
 
     override init(frame: CGRect) {
