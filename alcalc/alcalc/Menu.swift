@@ -25,7 +25,7 @@ var drinksArray = [
           target: 0, progress: 0,taskName: "", task: "",
           color: Color.yellow),
     Drink(name:"Wine", alcohol:"\(8)", volume:"",
-          target: 2250, progress: 0,taskName: "Tereza Mouther", task: "Drink 3 bottles of wine",
+          target: 2250, progress: 0,taskName: "Mother Tereza", task: "Drink 3 bottles of wine",
           color: Color.yellow),
     Drink(name:"Bear", alcohol:"\(4)", volume:"",
           target: 0, progress: 0,taskName: "", task: "",
@@ -65,6 +65,8 @@ struct Menu: View {
     @State var ind: Int = 0
     @Binding var allAlc: Float
     @Binding var promille: Float
+    @State var maxAlc: Int = 0
+    @State var showLower = false
     
     let columns = [
         GridItem(.flexible(), spacing: 0),
@@ -74,14 +76,14 @@ struct Menu: View {
     let colors: [Color] = [Color.red, Color.green, Color.blue, Color.yellow, Color.black, Color.pink, Color.mint]
     
     var body: some View {
-
+        
         
         ZStack{
             
             darkGray.ignoresSafeArea()
             
             VStack{
-
+                
                 ScrollView{
                     LazyVGrid(columns: columns, spacing: UIScreen.main.bounds.height * 0.0215){
                         ForEach(drinksArray.indices, id: \.self){ item in
@@ -107,6 +109,9 @@ struct Menu: View {
                                     color = drinksArray[item].color
                                     ind = item
                                     showDrink = true
+                                    if(Int(alcohol) ?? 0 < maxAlc){
+                                        showLower = true
+                                    }
                                 })
                             
                         }.disabled(showAdd || showDrink)
@@ -130,9 +135,9 @@ struct Menu: View {
             if(showAdd){
                 ZStack {
                     
-                        
+                    
                     VStack(spacing: UIScreen.main.bounds.height * 0.0107){
-                            VStack{
+                        VStack{
                             
                             
                             
@@ -144,39 +149,39 @@ struct Menu: View {
                             }){
                                 Text("X").frame(width: UIScreen.main.bounds.width * 0.095, height: UIScreen.main.bounds.width * 0.095, alignment: .center).background(darkGray).cornerRadius(10).foregroundColor(Color.white)
                             }
-                            }.frame(width: UIScreen.main.bounds.width * 0.7 ,height: UIScreen.main.bounds.height * 0.0442, alignment: .topTrailing).padding()
-                            
-                            
-                            VStack(alignment: .center, spacing: UIScreen.main.bounds.height * 0.0107){
-                                TextField("Name", text: $name).padding().frame(width: UIScreen.main.bounds.width * 0.6191, height: UIScreen.main.bounds.height * 0.0626).overlay(
-                                    RoundedRectangle(cornerRadius: 10.0)
-                                        .stroke(Color.gray, lineWidth: 1.0)).background(Color.white).cornerRadius(10)
-                                TextField("%", text: $alcohol).padding().frame(width: UIScreen.main.bounds.width * 0.6191, height: UIScreen.main.bounds.height * 0.0626).overlay(
-                                    RoundedRectangle(cornerRadius: 10.0)
-                                        .stroke(Color.gray, lineWidth: 1.0)).background(Color.white).cornerRadius(10)
-                                TextField("ml", text: $volume).padding().frame(width: UIScreen.main.bounds.width * 0.6191, height: UIScreen.main.bounds.height * 0.0626).overlay(
-                                    RoundedRectangle(cornerRadius: 10.0)
-                                        .stroke(Color.gray, lineWidth: 1.0)).background(Color.white).cornerRadius(10)
-                                ScrollView(.horizontal){
-                                    HStack{
-                                        ForEach(colors, id: \.self){ color in
-                                            Circle().foregroundColor(color)
-                                                .frame(width: 58, height: 58)
-                                                .opacity(color == selColor ? 0.5 : 1.0)
-                                                .scaleEffect(color == selColor ? 1.1 : 1.0)
-                                                .onTapGesture{
-                                                    selColor = color
-                                                }
-                                        }
-                                    }.padding()
-                                }.frame(width: UIScreen.main.bounds.width * 0.6191, height: UIScreen.main.bounds.height * 0.0971).overlay(
-                                    RoundedRectangle(cornerRadius: 10)
-                                        .stroke(Color.gray, lineWidth: 1.0)
-                                ).background(Color.white).cornerRadius(10)
-                            }.frame(height: UIScreen.main.bounds.height * 0.3282 ,alignment: .center)
-                            
-                            
-                            VStack{
+                        }.frame(width: UIScreen.main.bounds.width * 0.7 ,height: UIScreen.main.bounds.height * 0.0442, alignment: .topTrailing).padding()
+                        
+                        
+                        VStack(alignment: .center, spacing: UIScreen.main.bounds.height * 0.0107){
+                            TextField("Name", text: $name).padding().frame(width: UIScreen.main.bounds.width * 0.6191, height: UIScreen.main.bounds.height * 0.0626).overlay(
+                                RoundedRectangle(cornerRadius: 10.0)
+                                    .stroke(Color.gray, lineWidth: 1.0)).background(Color.white).cornerRadius(10)
+                            TextField("%", text: $alcohol).padding().frame(width: UIScreen.main.bounds.width * 0.6191, height: UIScreen.main.bounds.height * 0.0626).overlay(
+                                RoundedRectangle(cornerRadius: 10.0)
+                                    .stroke(Color.gray, lineWidth: 1.0)).background(Color.white).cornerRadius(10)
+                            TextField("ml", text: $volume).padding().frame(width: UIScreen.main.bounds.width * 0.6191, height: UIScreen.main.bounds.height * 0.0626).overlay(
+                                RoundedRectangle(cornerRadius: 10.0)
+                                    .stroke(Color.gray, lineWidth: 1.0)).background(Color.white).cornerRadius(10)
+                            ScrollView(.horizontal){
+                                HStack{
+                                    ForEach(colors, id: \.self){ color in
+                                        Circle().foregroundColor(color)
+                                            .frame(width: 58, height: 58)
+                                            .opacity(color == selColor ? 0.5 : 1.0)
+                                            .scaleEffect(color == selColor ? 1.1 : 1.0)
+                                            .onTapGesture{
+                                                selColor = color
+                                            }
+                                    }
+                                }.padding()
+                            }.frame(width: UIScreen.main.bounds.width * 0.6191, height: UIScreen.main.bounds.height * 0.0971).overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.gray, lineWidth: 1.0)
+                            ).background(Color.white).cornerRadius(10)
+                        }.frame(height: UIScreen.main.bounds.height * 0.3282 ,alignment: .center)
+                        
+                        
+                        VStack{
                             Button(
                                 action: {
                                     drinksArray.append(Drink(name: name, alcohol: alcohol, volume: volume,target: 0, progress: 0, taskName:"", task: "", color: selColor))
@@ -186,18 +191,18 @@ struct Menu: View {
                                     selColor = Color.white
                                     self.showAdd = false
                                 }){
-                                
+                                    
                                     Text("Add").foregroundColor(Color.white)
                                         .frame(width: UIScreen.main.bounds.width * 0.542, height: UIScreen.main.bounds.height * 0.0745, alignment: .center)
                                         .background(yellow)
                                         .opacity((name.isEmpty || alcohol.isEmpty || volume.isEmpty) || (selColor == Color.white) ? 0.5 : 1.0)
                                         .cornerRadius(20)
                                 }.disabled((name.isEmpty || alcohol.isEmpty || volume.isEmpty) || (selColor == Color.white))
-                                
-                                
-                            }.padding().frame(height: UIScreen.main.bounds.height * 0.0971, alignment: .bottom)
+                            
+                            
+                        }.padding().frame(height: UIScreen.main.bounds.height * 0.0971, alignment: .bottom)
                     }.frame(width: UIScreen.main.bounds.width * 0.7476, height: UIScreen.main.bounds.height * 0.5323, alignment: .top)
-                        
+                    
                     
                 }.frame(width: UIScreen.main.bounds.width * 0.7476, height: UIScreen.main.bounds.height * 0.5323).background(gray)
                     .cornerRadius(20).shadow(radius: 20).padding()
@@ -210,12 +215,12 @@ struct Menu: View {
                     VStack {
                         VStack{
                             VStack{
-                            
-                            Button(action:{
-                                self.showDrink = false
-                            }){
-                                Text("X").frame(width: 41, height: 41, alignment: .center).background(darkGray).cornerRadius(10).foregroundColor(Color.white)
-                            }
+                                
+                                Button(action:{
+                                    self.showDrink = false
+                                }){
+                                    Text("X").frame(width: 41, height: 41, alignment: .center).background(darkGray).cornerRadius(10).foregroundColor(Color.white)
+                                }
                             }.frame(width: 250 ,height: 41, alignment: .topTrailing).padding()
                             
                             Spacer()
@@ -232,8 +237,9 @@ struct Menu: View {
                                 allVol = Int(volume) ?? 0
                                 allAlc = (Float(alcohol) ?? 0)*0.01
                                 promille += Float(allVol)*allAlc*0.8/(koeff*(Float(weightGlobal) ?? 0))
-                                
-                                
+                                if (Int(alcohol) ?? 0 > maxAlc){
+                                    maxAlc = Int(alcohol) ?? 0
+                                }
                                 name = ""
                                 alcohol = ""
                                 self.showDrink = false
@@ -270,6 +276,41 @@ struct Menu: View {
                                 self.showDelete = false
                             }){
                                 Text("Cancel").frame(width: 400, height: 50).foregroundColor(.white)
+                            }
+                        }.frame(alignment: .bottom)
+                        
+                        
+                    }.padding(0).frame(width: 300, height: 200, alignment: .center)
+                    
+                }.frame(width: 300, height: 200)
+                    .cornerRadius(20).shadow(radius: 20).padding(0)
+            }
+            
+            if(showLower){
+                ZStack{
+                    darkGray
+                    VStack{
+                        
+                        Spacer()
+                        VStack(alignment: .center, spacing: 5){
+                            Text("Lower Alcohol").fontWeight(.bold).font(.title).frame(alignment: .top).foregroundColor(.white)
+                            Text("You might feel worse if you drink it").foregroundColor(.white).frame(alignment: .top)
+                        }.frame(alignment: .top)
+                        
+                        Spacer()
+                        VStack(alignment: .center, spacing: 0){
+                            Button(action: {
+                                self.showLower = false
+                            }){
+                                Text("I dont care").fontWeight(.bold).frame(width: 400, height: 50).border(gray).foregroundColor(orange)
+                            }
+                            
+                            Button(action: {
+                                self.showLower = false
+                                self.showDrink = false
+                                
+                            }){
+                                Text("Ok, i won't").frame(width: 400, height: 50).foregroundColor(.white)
                             }
                         }.frame(alignment: .bottom)
                         
