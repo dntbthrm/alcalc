@@ -20,6 +20,8 @@ struct Drink: Hashable{
     let color: Color
 }
 
+var maxAlc: Int = 0
+
 var drinksArray = [
     Drink(name:"Vodka", alcohol: "\(40)", volume:"",
           target: 0, progress: 0,taskName: "", task: "",
@@ -65,7 +67,6 @@ struct Menu: View {
     @State var ind: Int = 0
     @Binding var allAlc: Float
     @Binding var promille: Float
-    @State var maxAlc: Int = 0
     @State var showLower = false
     
     let columns = [
@@ -108,9 +109,11 @@ struct Menu: View {
                                     alcohol = "\(drinksArray[item].alcohol)"
                                     color = drinksArray[item].color
                                     ind = item
-                                    showDrink = true
+                                    
                                     if(Int(alcohol) ?? 0 < maxAlc){
                                         showLower = true
+                                    }else{
+                                        showDrink = true
                                     }
                                 })
                             
@@ -126,7 +129,7 @@ struct Menu: View {
                         .foregroundColor(Color.white)
                         .background(orange)
                         .cornerRadius(10)
-                        .disabled(showDrink)
+                        .disabled(showDrink || showLower || showDelete)
                 }.padding(.bottom)
                 
                 
@@ -153,13 +156,13 @@ struct Menu: View {
                         
                         
                         VStack(alignment: .center, spacing: UIScreen.main.bounds.height * 0.0107){
-                            TextField("Name", text: $name).padding().frame(width: UIScreen.main.bounds.width * 0.6191, height: UIScreen.main.bounds.height * 0.0626).overlay(
+                            TextField("Name", text: $name).keyboardType(.alphabet).padding().frame(width: UIScreen.main.bounds.width * 0.6191, height: UIScreen.main.bounds.height * 0.0626).overlay(
                                 RoundedRectangle(cornerRadius: 10.0)
                                     .stroke(Color.gray, lineWidth: 1.0)).background(Color.white).cornerRadius(10)
-                            TextField("%", text: $alcohol).padding().frame(width: UIScreen.main.bounds.width * 0.6191, height: UIScreen.main.bounds.height * 0.0626).overlay(
+                            TextField("%", text: $alcohol).keyboardType(.numberPad).padding().frame(width: UIScreen.main.bounds.width * 0.6191, height: UIScreen.main.bounds.height * 0.0626).overlay(
                                 RoundedRectangle(cornerRadius: 10.0)
                                     .stroke(Color.gray, lineWidth: 1.0)).background(Color.white).cornerRadius(10)
-                            TextField("ml", text: $volume).padding().frame(width: UIScreen.main.bounds.width * 0.6191, height: UIScreen.main.bounds.height * 0.0626).overlay(
+                            TextField("ml", text: $volume).keyboardType(.numberPad).padding().frame(width: UIScreen.main.bounds.width * 0.6191, height: UIScreen.main.bounds.height * 0.0626).overlay(
                                 RoundedRectangle(cornerRadius: 10.0)
                                     .stroke(Color.gray, lineWidth: 1.0)).background(Color.white).cornerRadius(10)
                             ScrollView(.horizontal){
@@ -210,27 +213,25 @@ struct Menu: View {
             
             
             if(showDrink){
-                ZStack {
+                ZStack{
                     gray
-                    VStack {
-                        VStack{
-                            VStack{
+                    VStack(spacing: 0){
+                        VStack(spacing: 0){
                                 
                                 Button(action:{
                                     self.showDrink = false
                                 }){
-                                    Text("X").frame(width: 41, height: 41, alignment: .center).background(darkGray).cornerRadius(10).foregroundColor(Color.white)
+                                    Text("X").frame(width: 30, height: 30, alignment: .center).background(darkGray).cornerRadius(10).foregroundColor(Color.white)
                                 }
-                            }.frame(width: 250 ,height: 41, alignment: .topTrailing).padding()
+                        }.frame(width: 280 ,height: 30, alignment: .topTrailing).padding(.top)
+                                                        
+                            VStack(alignment: .leading, spacing: 7){
+                                Text("\(name)").fontWeight(.bold).padding().frame(width: 250, height: 40, alignment: .leading).background(.white).cornerRadius(10)
+                                Text(alcohol + "%").padding().frame(width: 250, height: 40, alignment: .leading).background(.white).cornerRadius(10)
+                                TextField("ml", text: $volume).padding().keyboardType(.numberPad).frame(width: 250, height: 40, alignment: .center).background(.white).cornerRadius(10)
+                            }.frame(width: 300, height: 160, alignment: .center)
                             
-                            Spacer()
-                            
-                            VStack(alignment: .leading, spacing: 10){
-                                Text("\(name)").bold()
-                                Text(alcohol + "%")
-                                TextField("ml", text: $volume)
-                            }
-                            Spacer()
+                        VStack(spacing: 0){
                             Button(action: {
                                 drinksArray[ind].progress += (Double(volume) ?? 0)/drinksArray[ind].target
                                 DrinkedList.append(Drinked(name: name, alcohol: alcohol, volume: volume, color: color))
@@ -242,15 +243,15 @@ struct Menu: View {
                                 }
                                 name = ""
                                 alcohol = ""
+                                volume = ""
                                 self.showDrink = false
-                            }, label:{
-                                Text("Drink")
-                            }).colorMultiply(Color.orange)
-                                .disabled(name.isEmpty || alcohol.isEmpty || volume.isEmpty)
+                            }){
+                                Text("Drink").frame(width: 250, height: 50, alignment: .center).background(yellow).opacity((name.isEmpty || alcohol.isEmpty || volume.isEmpty) ? 0.5 : 1.0).cornerRadius(10).disabled(name.isEmpty || alcohol.isEmpty || volume.isEmpty).foregroundColor(.white)
+                            }.disabled(name.isEmpty || alcohol.isEmpty || volume.isEmpty)
+                        }.frame(alignment: .center)
                             
-                        }
-                    }.padding()
-                }.frame(width: 300, height: 200)
+                    }.frame(width: 300, height: 280, alignment: .top)
+                }.padding().frame(width: 300, height: 280)
                     .cornerRadius(20).shadow(radius: 20)
             }
             
@@ -301,6 +302,7 @@ struct Menu: View {
                         VStack(alignment: .center, spacing: 0){
                             Button(action: {
                                 self.showLower = false
+                                self.showDrink = true
                             }){
                                 Text("I dont care").fontWeight(.bold).frame(width: 400, height: 50).border(gray).foregroundColor(orange)
                             }
@@ -310,7 +312,7 @@ struct Menu: View {
                                 self.showDrink = false
                                 
                             }){
-                                Text("Ok, i won't").frame(width: 400, height: 50).foregroundColor(.white)
+                                Text("Ok, I won't").frame(width: 400, height: 50).foregroundColor(.white)
                             }
                         }.frame(alignment: .bottom)
                         
