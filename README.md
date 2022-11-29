@@ -6,7 +6,7 @@
 
 Miro : https://miro.com/app/board/uXjVOEMZOXs=/?share_link_id=460967181204\ 
 
-YouTube : https://www.youtube.com/channel/UCeOWYg9g0woEUg4qfrnkNBA
+YouTube : https://youtu.be/zvx2Az2Ujgg
 
 
 ## Description
